@@ -51,11 +51,11 @@ const Header = (props) => {
         <Link href="/contact">
           <a className="btn-primary">Contact</a>
         </Link>
-        <Link href="/Discord">
+        <Link href="https://discord.gg/eWsYZZz9Nz">
           <a className="btn-primary">Discord</a>
         </Link>
       </nav>
-      <Link href="/home/index.php?rp=/login">
+      <Link href="https://panel.salafihosting.com/index.php?rp=/login">
         <a className="btn-primary bg-salafi-blue-light text-white hover:bg-salafi-blue   rounded-1 py-2 px-8">
           Login
         </a>
