@@ -30,7 +30,19 @@ const Header = (props) => {
       <nav className="inline-flex flex-col sm:flex-row space-x-2 2xl:space-x-4 lg:text-xs xl:text-sm 2xl:text-lg mr-2">
         <Menu>
           <Menu.Button>
-            <span className="btn-primary">Services</span>
+            <span className="btn-primary ">
+              Services
+              <svg
+                className=" inline-block ml-1 fill-[#6B67F5] hover:fill-white	"
+                width="18"
+                height="11"
+                viewBox="0 0 18 11"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M8.99997 10.414L0.292969 1.70697L1.70697 0.292969L8.99997 7.58597L16.293 0.292969L17.707 1.70697L8.99997 10.414Z" />
+              </svg>
+            </span>
           </Menu.Button>
 
           <Menu.Items>
