@@ -22,13 +22,14 @@ const Header = (props) => {
       <nav className="inline-flex space-x-2 2xl:space-x-4 lg:text-xs xl:text-sm 2xl:text-lg mr-2">
         <Menu>
           <Menu.Button>Services</Menu.Button>
-
+       
           <Menu.Items>
             {/* Integrating with Next.js
 The Next.js Link component does not forward unknown props to the
  underlying a element, so it won't close the menu on click when used inside a Menu.Item.
 To use a Next.js Link inside a Menu.Item, create your own component
   that wraps Link and forwards unknown props to the child a element. */}
+
             <Menu.Item>
               {({ active }) => (
                 <a
@@ -50,6 +51,7 @@ To use a Next.js Link inside a Menu.Item, create your own component
               )}
             </Menu.Item>
           </Menu.Items>
+         
         </Menu>
         <Link href="/about">
           <a className="btn-primary">About</a>
@@ -59,6 +61,9 @@ To use a Next.js Link inside a Menu.Item, create your own component
         </Link>
         <Link href="/Discord">
           <a className="btn-primary">Discord</a>
+        </Link>
+        <Link href="/home/index.php?rp=/login">
+          <a className="btn-primary bg-salafi-blue-light text-white hover:bg-salafi-blue hover:text-white  rounded-1 py-2 px-8">Login</a>
         </Link>
       </nav>
     </header>
