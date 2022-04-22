@@ -7,7 +7,7 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  background-color: #fbfaff;
+  background-color: #ffffff;
 }
 
 a {
@@ -21,5 +21,26 @@ a {
 @layer components {
   .btn-primary {
     @apply lg:hover:text-black lg:hover:bg-salafi-primary-btn lg:hover:text-white lg:px-3 lg:py-2 lg:rounded-md  font-medium;
+  }
+}
+
+.heading {
+  font-size: 24px;
+  font-weight: bold;
+  color: #2e2e2e;
+}
+@media (min-width: 640px) {
+  .heading {
+    font-size: 40px;
+  }
+}
+@media (min-width: 768px) {
+  .heading {
+    font-size: 56px;
+  }
+}
+@media (min-width: 1440px) {
+  .heading {
+    font-size: 64px;
   }
 }

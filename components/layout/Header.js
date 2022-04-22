@@ -8,7 +8,7 @@ const Header = (props) => {
   function MyLink(props) {
     let { href, children, ...rest } = props;
     return (
-      <div className="d-flex flex-col">
+      <div className=" flex-col">
         <Link href={href}>
           <a {...rest} className="btn-primary">
             {children}
@@ -18,9 +18,13 @@ const Header = (props) => {
     );
   }
   return (
-    <header className="m-2 d-flex flex-col sm:flex-row sm:px-10 md:m-4 2xl:mt-6 text-salafi-heading  flex justify-between items-center">
+    <header className="  flex flex-col  sm:flex-row sm:justify-between sm:items-center space-y-2 sm:space-y-0 p-10 sm:px-20 sm:py-2 2xl:mt-6 text-salafi-heading   ">
       <div className="relative w-12 h-12 2xl:w-16 2xl:h-16">
-        <Image src={logo} alt="logo>" layout="fill" />
+        <Link href="/">
+          <a>
+            <Image src={logo} alt="logo>" layout="fill" />
+          </a>
+        </Link>
       </div>
 
       <nav className="inline-flex flex-col sm:flex-row space-x-2 2xl:space-x-4 lg:text-xs xl:text-sm 2xl:text-lg mr-2">
@@ -51,7 +55,7 @@ const Header = (props) => {
         <Link href="/contact">
           <a className="btn-primary">Contact</a>
         </Link>
-        <Link href="/Discord">
+        <Link href="https:/discord.gg/eWsYZZz9Nz">
           <a className="btn-primary">Discord</a>
         </Link>
       </nav>
