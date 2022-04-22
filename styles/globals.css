@@ -7,7 +7,7 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  background-color: #FBFAFF;
+  background-color: #fbfaff;
 }
 
 a {
@@ -20,6 +20,6 @@ a {
 }
 @layer components {
   .btn-primary {
-    @apply lg:hover:text-black lg:hover:bg-gray-100 lg:px-3 lg:py-2 lg:rounded-md  font-medium;
+    @apply lg:hover:text-black lg:hover:bg-salafi-primary-btn lg:hover:text-white lg:px-3 lg:py-2 lg:rounded-md  font-medium;
   }
 }

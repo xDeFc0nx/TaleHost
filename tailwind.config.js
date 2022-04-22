@@ -16,6 +16,7 @@ module.exports = {
         "salafi-body": "#808080",
         "salafi-black": "#000000",
         "salafi-grey-white": "#E9E9E9",
+        "salafi-primary-btn": "#6B67F5",
       },
       fontFamily: {
         sans: ["inter", "sans-serif"],
