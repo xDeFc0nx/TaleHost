@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
-
+import { Menu, Transition } from '@headlessui/react'
 // import { Popover, Transition } from "@headlessui/react";
 // import { MenuIcon, XIcon } from "@heroicons/react/outline";
 import { Fragment, useState } from "react";
@@ -13,7 +13,9 @@ const Header = (props) => {
     setServices(e.target.value);
   };
   return (
+    
     <header className="m-2 sm:px-10 md:m-4 2xl:mt-6 text-salafi-heading  flex justify-between items-center">
+      
       <div className="relative w-12 h-12 2xl:w-16 2xl:h-16">
         {/* <Image
           src="/images/salafi-logo-resize.png"
@@ -23,22 +25,42 @@ const Header = (props) => {
       </div>
 
       <nav className="inline-flex space-x-2 2xl:space-x-4 lg:text-xs xl:text-sm 2xl:text-lg mr-2">
-        <Link href={`/${services}`}>
-          <a className="btn-primary">
-            <form onChange={serviceFormHandler}>
-              <select name="service">
-                <option value="web-hosting">Web Hosting</option>
-                <option value="discord-bot-hosting">Discord Bot Hosting</option>
-                <option value="minecraft-hosting">Minecraft Hosting</option>
-              </select>
-            </form>
-          </a>
-        </Link>
+  
+        <Menu>
+      <Menu.Button>Services</Menu.Button>
+      
+      <Menu.Items>
+      
+        <Menu.Item>
+          {({ active }) => (
+            <a
+              className={`${active && 'bg-salafi-blue-light'}`}
+              href="/account-settings"
+            >
+              Web hosting
+            </a>
+          )}
+        </Menu.Item>
+        <Menu.Item>
+          {({ active }) => (
+            <a
+              className={`${active && 'bg-salafi-blue-light'}`}
+              href="/account-settings"
+            >
+              Discord bot hosting
+            </a>
+          )}
+        </Menu.Item>
+      </Menu.Items>
+    </Menu>
         <Link href="/about">
           <a className="btn-primary">About</a>
         </Link>
         <Link href="/contact">
           <a className="btn-primary">Contact</a>
+        </Link>
+        <Link href="/Discord">
+          <a className="btn-primary">Discord</a>
         </Link>
       </nav>
     </header>
