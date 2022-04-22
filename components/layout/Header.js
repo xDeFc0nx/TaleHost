@@ -35,31 +35,33 @@ const Header = (props) => {
 
           <Menu.Items>
             <Menu.Item>
-              <MyLink href="/web-hosting">Web hosting</MyLink>
+              <MyLink href="https://panel.salafihosting.com/index.php?rp=/store/website-hosting">Web hosting</MyLink>
             </Menu.Item>
             <Menu.Item>
-              <MyLink href="/discord-bot-hosting">Discord Bot hosting</MyLink>
+              <MyLink href="https://panel.salafihosting.com/index.php?rp=/store/discord-bot-hosting">Discord Bot hosting</MyLink>
             </Menu.Item>
             <Menu.Item>
-              <MyLink href="/minecraft-hosting">Minecraft hosting</MyLink>
+              <MyLink href="https://panel.salafihosting.com/index.php?rp=/store/minecraft-hosting">Minecraft hosting</MyLink>
             </Menu.Item>
           </Menu.Items>
         </Menu>
 
-        <Link href="/price">
-          <a className="btn-primary">Price</a>
-        </Link>
+
         <Link href="/about">
           <a className="btn-primary">About</a>
         </Link>
+<<<<<<< HEAD
         <Link href="/contact">
           <a className="btn-primary">Contact</a>
         </Link>
         <Link href="https:/discord.gg/eWsYZZz9Nz">
+=======
+        <Link href="https://discord.gg/eWsYZZz9Nz">
+>>>>>>> 9e4ffb1c2ef31a56dfc7326bbf2c990fba29da5f
           <a className="btn-primary">Discord</a>
         </Link>
       </nav>
-      <Link href="/home/index.php?rp=/login">
+      <Link href="https://panel.salafihosting.com/index.php?rp=/login">
         <a className="btn-primary bg-salafi-blue-light text-white hover:bg-salafi-blue   rounded-1 py-2 px-8">
           Login
         </a>
