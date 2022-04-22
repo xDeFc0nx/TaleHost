@@ -31,20 +31,18 @@ const Header = (props) => {
 
           <Menu.Items>
             <Menu.Item>
-              <MyLink href="/web-hosting">Web hosting</MyLink>
+              <MyLink href="https://panel.salafihosting.com/index.php?rp=/store/website-hosting">Web hosting</MyLink>
             </Menu.Item>
             <Menu.Item>
-              <MyLink href="/discord-bot-hosting">Discord Bot hosting</MyLink>
+              <MyLink href="https://panel.salafihosting.com/index.php?rp=/store/discord-bot-hosting">Discord Bot hosting</MyLink>
             </Menu.Item>
             <Menu.Item>
-              <MyLink href="/minecraft-hosting">Minecraft hosting</MyLink>
+              <MyLink href="https://panel.salafihosting.com/index.php?rp=/store/minecraft-hosting">Minecraft hosting</MyLink>
             </Menu.Item>
           </Menu.Items>
         </Menu>
 
-        <Link href="/price">
-          <a className="btn-primary">Price</a>
-        </Link>
+
         <Link href="/about">
           <a className="btn-primary">About</a>
         </Link>
