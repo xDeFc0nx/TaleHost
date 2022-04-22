@@ -59,6 +59,11 @@ const Header = (props) => {
           <a className="btn-primary">Discord</a>
         </Link>
       </nav>
+      <Link href="/home/index.php?rp=/login">
+        <a className="btn-primary bg-salafi-blue-light text-white hover:bg-salafi-blue hover:text-white  rounded-1 py-2 px-8">
+          Login
+        </a>
+      </Link>
     </header>
 
     ///////////////////////////////////////////////////////
