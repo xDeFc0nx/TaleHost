@@ -1,11 +1,11 @@
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
-import { Menu, Transition } from '@headlessui/react'
+import { Menu, Transition } from "@headlessui/react";
 // import { Popover, Transition } from "@headlessui/react";
 // import { MenuIcon, XIcon } from "@heroicons/react/outline";
 import { Fragment, useState } from "react";
-import logo from "../../images/salafi-logo-resize.png"
+import logo from "../../images/salafi-logo-resize.png";
 const Header = (props) => {
   const [services, setServices] = useState("");
   const serviceFormHandler = (e) => {
@@ -14,46 +14,43 @@ const Header = (props) => {
     setServices(e.target.value);
   };
   return (
-    
     <header className="m-2 sm:px-10 md:m-4 2xl:mt-6 text-salafi-heading  flex justify-between items-center">
-      
       <div className="relative w-12 h-12 2xl:w-16 2xl:h-16">
-         <Image
-          src={logo}
-          alt="logo>"
-          layout="fill"
-        /> 
+        <Image src={logo} alt="logo>" layout="fill" />
       </div>
 
       <nav className="inline-flex space-x-2 2xl:space-x-4 lg:text-xs xl:text-sm 2xl:text-lg mr-2">
-  
         <Menu>
-      <Menu.Button>Services</Menu.Button>
-      
-      <Menu.Items>
-      
-        <Menu.Item>
-          {({ active }) => (
-            <a
-              className={`${active && 'bg-salafi-blue-light'}`}
-              href="/account-settings"
-            >
-              Web hosting
-            </a>
-          )}
-        </Menu.Item>
-        <Menu.Item>
-          {({ active }) => (
-            <a
-              className={`${active && 'bg-salafi-blue-light'}`}
-              href="/account-settings"
-            >
-              Discord bot hosting
-            </a>
-          )}
-        </Menu.Item>
-      </Menu.Items>
-    </Menu>
+          <Menu.Button>Services</Menu.Button>
+
+          <Menu.Items>
+            {/* Integrating with Next.js
+The Next.js Link component does not forward unknown props to the
+ underlying a element, so it won't close the menu on click when used inside a Menu.Item.
+To use a Next.js Link inside a Menu.Item, create your own component
+  that wraps Link and forwards unknown props to the child a element. */}
+            <Menu.Item>
+              {({ active }) => (
+                <a
+                  className={`${active && "bg-salafi-blue-light"}`}
+                  href="/account-settings"
+                >
+                  Web hosting
+                </a>
+              )}
+            </Menu.Item>
+            <Menu.Item>
+              {({ active }) => (
+                <a
+                  className={`${active && "bg-salafi-blue-light"}`}
+                  href="/account-settings"
+                >
+                  Discord bot hosting
+                </a>
+              )}
+            </Menu.Item>
+          </Menu.Items>
+        </Menu>
         <Link href="/about">
           <a className="btn-primary">About</a>
         </Link>
