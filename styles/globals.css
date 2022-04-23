@@ -7,7 +7,7 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  background-color: #FBFAFF;
+  background-color: #fff;
 }
 
 a {
@@ -36,9 +36,14 @@ a {
 }
 @media (min-width: 768px) {
   .heading {
-    font-size: 56px;
+    font-size: 52px;
   }
 }
+/* @media (min-width: 1024px) {
+  .heading {
+    font-size: 56px;
+  }
+} */
 @media (min-width: 1440px) {
   .heading {
     font-size: 64px;
