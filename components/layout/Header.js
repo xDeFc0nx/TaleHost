@@ -30,10 +30,10 @@ const Header = (props) => {
       <nav className="inline-flex flex-col sm:flex-row space-x-2 2xl:space-x-4 lg:text-xs xl:text-sm 2xl:text-lg mr-2">
         <Menu>
           <Menu.Button>
-            <span className="btn-primary ">
+            <span className="btn-primary group ">
               Services
               <svg
-                className=" inline-block ml-1 fill-[#6B67F5] hover:fill-white	"
+                className=" inline-block ml-1 fill-[#6B67F5] group-hover:fill-white	"
                 width="18"
                 height="11"
                 viewBox="0 0 18 11"

@@ -4,11 +4,7 @@ import { Layout } from "../components/layout/Layout";
 import styles from "../styles/Home.module.css";
 import heroTower from "../images/hero-tower.svg";
 import ServiceCard from "../components/ui/ServiceCard";
-import { useRouter } from 'next/router'
-
-
-
-
+import { useRouter } from "next/router";
 
 const servicesDescription = [
   {
@@ -33,27 +29,30 @@ const servicesDescription = [
 ];
 
 export default function Home() {
+  const router = useRouter();
+
   const domainFindHandler = (e) => {
     e.preventDefault();
+    const domainName = e.target[0].value;
     console.log(e);
     console.log(e.target[0].value);
+    router.push(
+      `https://panel.salafihosting.com/cart.php?a=add&domain=register&query=${domainName}`
+    );
   };
 
-  function ActiveLink({ children, href }) {
-    const router = useRouter()
-    const style = {
-      marginRight: 10,
-      color: router.asPath === href ? 'red' : 'black',
-    }
-  
-    const handleClick = (e) => {
-      e.preventDefault()
-      router.push(href)
-    }}
+  // function ActiveLink({ children, href }) {
+  //   const style = {
+  //     marginRight: 10,
+  //     color: router.asPath === href ? "red" : "black",
+  //   };
 
+  //   const handleClick = (e) => {
+  //     e.preventDefault();
+  //     router.push(href);
+  //   };
+  // }
 
-
-  
   return (
     <Layout>
       {/* Call to Action */}
@@ -127,8 +126,8 @@ export default function Home() {
               placeholder="Search your domain name"
             />
             <button
-              className="sm:absolute right-2 top-1 p-2 px-4 mt-2 sm:mt-0 ml-2 sm:ml-0 rounded-md shadow-sm text-white hover:bg-[#8D70FE] bg-salafi-primary-btn"
-              type="submit"  onClick={() => router.push('/about')}
+              className="sm:absolute right-2 top-1 p-2 px-4 mt-2 sm:mt-0 ml-2 sm:ml-0 rounded-md shadow-sm text-white bg-salafi-primary-btn hover:bg-[#8D70FE] "
+              type="submit"
             >
               Submit
             </button>
