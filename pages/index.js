@@ -55,8 +55,24 @@ export default function Home() {
 
   return (
     <Layout>
+       <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-2JYXB6HX49"
+        />
+
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', '[Tracking ID]', { page_path: window.location.pathname });
+            `,
+          }}
+        />
       {/* Call to Action */}
       <div className="sm:py-20 bg-salafi-grey-white space-y-10">
+        
         {/* Hero */}
         <div className="p-10 sm:p-0 grid grid-cols-12 place-items-center  ">
           <h1 className="heading col-span-12 sm:col-span-6 self-start sm:w-9/12 pb-10 text-center sm:text-left">
