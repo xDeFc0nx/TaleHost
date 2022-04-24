@@ -33,7 +33,7 @@ const Header = (props) => {
             <span className="btn-primary group ">
               Services
               <svg
-                className=" inline-block ml-1 fill-[#6B67F5] group-hover:fill-white	"
+                className=" inline-block ml-1 fill-[#8D70FE] group-hover:fill-white	"
                 width="18"
                 height="11"
                 viewBox="0 0 18 11"
@@ -77,7 +77,7 @@ const Header = (props) => {
         </Link>
       </nav>
       <Link href="https://panel.salafihosting.com/index.php?rp=/login">
-        <a className="btn-primary bg-salafi-blue text-white hover:bg-salafi-blue-light   rounded-1 py-2 px-8">
+        <a className="btn-primary bg-salafi-blue-light text-white hover:bg-salafi-blue   rounded-1 py-2 px-8">
           Login
         </a>
       </Link>
