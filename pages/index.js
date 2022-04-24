@@ -5,28 +5,8 @@ import styles from "../styles/Home.module.css";
 import heroTower from "../images/hero-tower.svg";
 import ServiceCard from "../components/ui/ServiceCard";
 import { useRouter } from "next/router";
-
-const servicesDescription = [
-  {
-    title: "Web Hosting",
-    description: "Host your own website and email without the worry of DDoS",
-    link: "https://panel.salafihosting.com/index.php?rp=/store/website-hosting",
-    id: "web1",
-  },
-  {
-    title: "Discord Bot Hosting",
-    description:
-      "Host your own custom coded Discord bot, with basic Linux command.",
-    link: "https://panel.salafihosting.com/index.php?rp=/store/discord-bot-hosting",
-    id: "web2",
-  },
-  {
-    title: "Minecraft server",
-    description: "Play with your friends anywhere, whether on mobile or PC!",
-    link: "https://panel.salafihosting.com/index.php?rp=/store/minecraft-hosting",
-    id: "minecraft2",
-  },
-];
+import { servicesDescription } from "../public/constant/servicesDescription";
+import { pricesDescription } from "../public/constant/pricesDescription";
 
 export default function Home() {
   const router = useRouter();
@@ -34,45 +14,29 @@ export default function Home() {
   const domainFindHandler = (e) => {
     e.preventDefault();
     const domainName = e.target[0].value;
-    console.log(e);
-    console.log(e.target[0].value);
     router.push(
       `https://panel.salafihosting.com/cart.php?a=add&domain=register&query=${domainName}`
     );
   };
-
-  // function ActiveLink({ children, href }) {
-  //   const style = {
-  //     marginRight: 10,
-  //     color: router.asPath === href ? "red" : "black",
-  //   };
-
-  //   const handleClick = (e) => {
-  //     e.preventDefault();
-  //     router.push(href);
-  //   };
-  // }
-
   return (
     <Layout>
-       <script
-          async
-          src="https://www.googletagmanager.com/gtag/js?id=G-2JYXB6HX49"
-        />
+      <script
+        async
+        src="https://www.googletagmanager.com/gtag/js?id=G-2JYXB6HX49"
+      />
 
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
+      <script
+        dangerouslySetInnerHTML={{
+          __html: `
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
               gtag('config', '[Tracking ID]', { page_path: window.location.pathname });
             `,
-          }}
-        />
+        }}
+      />
       {/* Call to Action */}
       <div className="sm:py-20 bg-salafi-grey-white space-y-10">
-        
         {/* Hero */}
         <div className="p-10 sm:p-0 grid grid-cols-12 place-items-center  ">
           <h1 className="heading col-span-12 sm:col-span-6 self-start sm:w-9/12 pb-10 text-center sm:text-left">
@@ -195,6 +159,17 @@ export default function Home() {
             />
           </svg>
         </div>
+      </div>
+
+      {/* Price */}
+      <div>
+        <h1 className="heading text-center mt-20">
+          Choose Your Web Hosting Package
+        </h1>
+        {/* 
+        {pricesDescription[0].map((price) => (
+          <h1>{price.title}</h1>
+        ))} */}
       </div>
     </Layout>
   );
