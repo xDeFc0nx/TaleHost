@@ -127,7 +127,7 @@ export default function Home() {
               placeholder="Search your domain name"
             />
             <button
-              className="sm:absolute right-2 top-1 p-2 px-4 mt-2 sm:mt-0 ml-2 sm:ml-0 rounded-md shadow-sm text-white hover:bg-[#8D70FE] bg-salafi-primary-btn"
+              className="sm:absolute right-2 top-1 p-2 px-4 mt-2 sm:mt-0 ml-2 sm:ml-0 rounded-md shadow-sm text-white hover:bg-salafi-blue bg-salafi-primary-btn"
               type="submit"  onClick={() => router.push('/about')}
             >
               Submit
