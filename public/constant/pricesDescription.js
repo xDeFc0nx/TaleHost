@@ -1,5 +1,5 @@
 export const pricesDescription = {
-  "web-hosting": [
+  webHosting: [
     {
       title: "Basic",
       domain: "1 Domain",
@@ -8,7 +8,7 @@ export const pricesDescription = {
       securityFeature: "Free SSL",
       emailAccount: "1 Email Account",
       price: "3.99",
-      link: "",
+      link: "https://panel.salafihosting.com/index.php?rp=/store/website-hosting",
     },
     {
       title: "Starter",
@@ -18,7 +18,7 @@ export const pricesDescription = {
       securityFeature: "Free SSL",
       emailAccount: "3 Email Account",
       price: "6.99",
-      link: "",
+      link: "https://panel.salafihosting.com/index.php?rp=/store/website-hosting",
     },
     {
       title: "Premium Hosting",
@@ -28,10 +28,10 @@ export const pricesDescription = {
       securityFeature: "Free SSL",
       emailAccount: "5 Email Account",
       price: "9.99",
-      link: "",
+      link: "https://panel.salafihosting.com/index.php?rp=/store/website-hosting",
     },
   ],
-  "bot-hosting": [
+  botHosting: [
     {
       title: "Basic",
       ram: "1 GB RAM",
@@ -73,7 +73,7 @@ export const pricesDescription = {
       link: "",
     },
   ],
-  "mineCraft-hosting": [
+  mineCraftHosting: [
     {
       title: "Basic",
       ram: "1 GB RAM",

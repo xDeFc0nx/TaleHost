@@ -4,6 +4,8 @@ import { Layout } from "../components/layout/Layout";
 import styles from "../styles/Home.module.css";
 import heroTower from "../images/hero-tower.svg";
 import ServiceCard from "../components/ui/ServiceCard";
+import PriceCardForWebHosting from "../components/ui/PriceCardForWebHosting";
+
 import { useRouter } from "next/router";
 import { servicesDescription } from "../public/constant/servicesDescription";
 import { pricesDescription } from "../public/constant/pricesDescription";
@@ -11,6 +13,7 @@ import { pricesDescription } from "../public/constant/pricesDescription";
 export default function Home() {
   const router = useRouter();
 
+  const { webHosting } = pricesDescription;
   const domainFindHandler = (e) => {
     e.preventDefault();
     const domainName = e.target[0].value;
@@ -161,15 +164,17 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Price */}
-      <div>
-        <h1 className="heading text-center mt-20">
+      {/*Web Hosting Price */}
+      <div className="flex flex-col items-center m-10">
+        <h1 className="heading text-center mt-20 mb-10 w-6/12 sm:w-full">
           Choose Your Web Hosting Package
         </h1>
-        {/* 
-        {pricesDescription[0].map((price) => (
-          <h1>{price.title}</h1>
-        ))} */}
+
+        <div className="flex flex-wrap gap-10 justify-center">
+          {webHosting.map((plan) => (
+            <PriceCardForWebHosting key={plan.title} {...plan} />
+          ))}
+        </div>
       </div>
     </Layout>
   );
