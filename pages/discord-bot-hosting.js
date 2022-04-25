@@ -5,7 +5,7 @@ import styles from "../styles/Home.module.css";
 import heroTower from "../images/hero-tower.svg";
 import ServiceCard from "../components/ui/ServiceCard";
 import PriceCardForBotHosting from "../components/ui/PriceCardForBotHosting";
-
+import Head from 'next/head'
 import { useRouter } from "next/router";
 import { servicesDescription } from "../public/constant/servicesDescription";
 import { pricesDescription } from "../public/constant/pricesDescription";
@@ -32,7 +32,10 @@ export default function Home() {
             `,
         }}
       />
-    
+    <Head>
+        <title>Discord Bot Hosting</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
       {/*Web Hosting Price */}
       <div className="flex flex-col items-center m-10">
         <h1 className="heading text-center mt-20 mb-10 w-6/12 sm:w-full">

@@ -5,7 +5,7 @@ import styles from "../styles/Home.module.css";
 import heroTower from "../images/hero-tower.svg";
 import ServiceCard from "../components/ui/ServiceCard";
 import PriceCardForWebHosting from "../components/ui/PriceCardForWebHosting";
-
+import Head from 'next/head'
 import { useRouter } from "next/router";
 import { servicesDescription } from "../public/constant/servicesDescription";
 import { pricesDescription } from "../public/constant/pricesDescription";
@@ -23,6 +23,10 @@ export default function Home() {
   };
   return (
     <Layout>
+      <Head>
+        <title>Salai Hosting LLC</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
       <script
         async
         src="https://www.googletagmanager.com/gtag/js?id=G-2JYXB6HX49"
