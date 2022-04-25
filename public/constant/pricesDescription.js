@@ -8,7 +8,7 @@ export const pricesDescription = {
       securityFeature: "Free SSL",
       emailAccount: "1 Email Account",
       price: "3.99",
-      link: "https://panel.salafihosting.com/index.php?rp=/store/website-hosting",
+      link: "https://panel.salafihosting.com/index.php?rp=/store/website-hosting/basic",
     },
     {
       title: "Starter",
@@ -18,7 +18,7 @@ export const pricesDescription = {
       securityFeature: "Free SSL",
       emailAccount: "3 Email Account",
       price: "6.99",
-      link: "https://panel.salafihosting.com/index.php?rp=/store/website-hosting",
+      link: "https://panel.salafihosting.com/index.php?rp=/store/website-hosting/starter",
     },
     {
       title: "Premium Hosting",
@@ -28,7 +28,7 @@ export const pricesDescription = {
       securityFeature: "Free SSL",
       emailAccount: "5 Email Account",
       price: "9.99",
-      link: "https://panel.salafihosting.com/index.php?rp=/store/website-hosting",
+      link: "https://panel.salafihosting.com/index.php?rp=/store/website-hosting/premium-hosting",
     },
   ],
   botHosting: [
