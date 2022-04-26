@@ -21,17 +21,8 @@ const ListFeature = (props) => {
   );
 };
 
-
 const Card = (props) => {
-  const {
-    title,
-    ram,
-    storage,
-    cpu,
-    bandwidth,
-    price,
-    link,
-  } = props;
+  const { title, ram, storage, cpu, bandwidth, price, link } = props;
   return (
     <Fragment>
       <div className="w-[16.5rem] sm:w-[18rem] pt-6 sm:pt-2 pb-4 sm:pb-2 m-3 md:m-4 md:mt-12 2xl:m-10 flex flex-col justify-center items-center rounded-xl border-[1px]  hover:border-[#8D70FE] hover:scale-105 duration-400 transform transition">
@@ -43,11 +34,9 @@ const Card = (props) => {
         {/* list */}
         <div className="flex justify-center sm:mt-2">
           <ul className="font-medium text-[#808080]">
-            {[ram, storage, cpu, bandwidth,  ].map(
-              (list) => (
-                <ListFeature key={list}>{list}</ListFeature>
-              )
-            )}
+            {[ram, storage, cpu, bandwidth].map((list) => (
+              <ListFeature key={list}>{list}</ListFeature>
+            ))}
           </ul>
         </div>
         {/* Price and CTA */}

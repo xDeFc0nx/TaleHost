@@ -1,5 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
+import Link from "next/Link";
+
 import { useRouter } from "next/router";
 import { Layout } from "../components/layout/Layout";
 import styles from "../styles/Home.module.css";
@@ -8,8 +10,10 @@ import ServiceCard from "../components/ui/ServiceCard";
 import PriceCardForWebHosting from "../components/ui/PriceCardForWebHosting";
 import { servicesDescription } from "../public/constant/servicesDescription";
 import { pricesDescription } from "../public/constant/pricesDescription";
-import MuslimManInTurban from "../images/MuslimManInTurban";
-import Head from 'next/head'
+import muslimManInTurban from "../images/muslimManInTurban.svg";
+import simpleAndFastWeb from "../images/simpleAndFastWeb.svg";
+import supportFeature from "../images/supportFeature.svg";
+
 export default function Home() {
   const router = useRouter();
 
@@ -24,7 +28,7 @@ export default function Home() {
 
   const ListFeature = (props) => {
     return (
-      <li className="flex flex-row items-center">
+      <li className="flex flex-row items-center text-[#808080] ">
         <svg
           className="mr-6"
           width="18"
@@ -45,7 +49,7 @@ export default function Home() {
   return (
     <Layout>
       <Head>
-        <title>Salai Hosting LLC</title>
+        <title>Salafi Hosting LLC</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
       <script
@@ -204,24 +208,123 @@ export default function Home() {
 
       {/* Features */}
       {/* Feature1 Extra Security */}
-
-      <div className="m-10 sm:m-20">
+      <div className="m-10 sm:m-20 flex flex-col justify-center items-center sm:flex-row  sm:justify-around sm:items-center">
         <div>
           <h1 className="heading">Extra Security</h1>
-          <ul className="mt-6">
+          <ul className="mt-6  2xl:text-2xl">
             {[
               "Hard Secured Servers",
               "DDoS Protected",
               "Up to date servers at all times",
             ].map((feature) => (
-              <ListFeature>{feature}</ListFeature>
+              <ListFeature key={feature}>{feature}</ListFeature>
             ))}
           </ul>
         </div>
 
-        <div className="relative w-[10rem] h-[10rem]">
-          <MuslimManInTurban className="absolute w-[20rem]  h-[20rem]" />
+        <div className="relative w-[15rem] sm:w-[25rem] 2xl:w-[30rem] h-[15rem] sm:h-[25rem] 2xl:h-[30rem] flex justify-center items-center">
+          <Image className="absolute" src={muslimManInTurban} />
         </div>
+      </div>
+
+      {/* Feature2 Simply and fast website */}
+      <div className="bg-[#F7FAFE] -skew-y-6 py-1">
+        <div className="skew-y-6 m-10 sm:m-20 flex flex-col justify-center items-center sm:flex-row  sm:justify-around sm:items-center ">
+          <div className="relative w-[15rem] sm:w-[25rem] 2xl:w-[30rem] h-[15rem] sm:h-[25rem] 2xl:h-[30rem] flex justify-center items-center">
+            <Image className="absolute" src={simpleAndFastWeb} />
+          </div>
+          <div>
+            <h1 className="heading sm:w-8/12 2xl:10/12">
+              Simply and fast website
+            </h1>
+            <ul className="mt-6  2xl:text-2xl">
+              {["1GBPS internet speed at all times", "99.99% Down time"].map(
+                (feature) => (
+                  <ListFeature key={feature}>{feature}</ListFeature>
+                )
+              )}
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      {/* Feature3 24/7 Customer Support */}
+      <div className="m-10 sm:m-20 flex flex-col justify-center items-center sm:flex-row  sm:justify-around sm:items-center">
+        <div>
+          <h1 className="heading sm:6/12">24&#47;7 Customer Support</h1>
+          <ul className="mt-6  2xl:text-2xl">
+            {[
+              "24/7 Support",
+              "Average reply rate 5-25 Minutes",
+              "Discord Server",
+            ].map((feature) => (
+              <ListFeature key={feature}>{feature}</ListFeature>
+            ))}
+          </ul>
+        </div>
+
+        <div className="relative w-[15rem] sm:w-[25rem] 2xl:w-[30rem] h-[15rem] sm:h-[25rem] 2xl:h-[30rem] flex justify-center items-center">
+          <Image className="absolute" src={supportFeature} />
+        </div>
+      </div>
+
+      {/* Call to Action  */}
+      <div className="relative my-10 bg-[#7721FF] w-[90%] h-[26rem] p-2 sm:p-0 mx-auto  flex flex-col items-center justify-center text-center sm:text-center rounded-2xl shadow-sm">
+        <h1 className="heading !text-white w-6/12 leading-tight">
+          Start the success of your website with us
+        </h1>
+
+        <button className="py-2 px-4 mt-8 rounded-lg shadow-sm text-salafi-black bg-white font-medium hover:bg-salafi-grey-white ">
+          <Link href="https://panel.salafihosting.com/index.php">
+            <a>Get started</a>
+          </Link>
+        </button>
+
+        {/* svg1 */}
+
+        <svg
+          className="absolute top-2 left-1/3"
+          width="55"
+          height="35"
+          viewBox="0 0 55 35"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M34.8154 34.641L0.174415 14.641L54.8154 0L34.8154 34.641Z"
+            fill="#17D7B5"
+          />
+        </svg>
+        {/* svg2 */}
+
+        <svg
+          className="absolute top-[60%] left-0"
+          width="49"
+          height="39"
+          viewBox="0 0 49 39"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M10.3528 38.9898L48.9898 28.6371L0 0.352783L10.3528 38.9898Z"
+            fill="#17D7B5"
+          />
+        </svg>
+
+        {/* svg3 */}
+        <svg
+          className="absolute right-2 bottom-4"
+          width="89"
+          height="71"
+          viewBox="0 0 89 71"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M69.5467 70.1817L8.82149e-06 51.5467L88.1816 0.63501L69.5467 70.1817Z"
+            fill="#17D7B5"
+          />
+        </svg>
       </div>
     </Layout>
   );
