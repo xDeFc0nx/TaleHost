@@ -1,14 +1,15 @@
 // import Head from "next/head";
 import Image from "next/image";
+import { useRouter } from "next/router";
 import { Layout } from "../components/layout/Layout";
 import styles from "../styles/Home.module.css";
 import heroTower from "../images/hero-tower.svg";
 import ServiceCard from "../components/ui/ServiceCard";
 import PriceCardForWebHosting from "../components/ui/PriceCardForWebHosting";
 
-import { useRouter } from "next/router";
 import { servicesDescription } from "../public/constant/servicesDescription";
 import { pricesDescription } from "../public/constant/pricesDescription";
+import MuslimManInTurban from "../images/MuslimManInTurban";
 
 export default function Home() {
   const router = useRouter();
@@ -19,6 +20,27 @@ export default function Home() {
     const domainName = e.target[0].value;
     router.push(
       `https://panel.salafihosting.com/cart.php?a=add&domain=register&query=${domainName}`
+    );
+  };
+
+  const ListFeature = (props) => {
+    return (
+      <li className="flex flex-row items-center">
+        <svg
+          className="mr-6"
+          width="18"
+          height="13"
+          viewBox="0 0 18 13"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M6.99313 12.421L0.286133 5.57997L1.71413 4.17997L7.00713 9.57897L16.2931 0.292969L17.7071 1.70697L6.99313 12.421Z"
+            fill="#079552"
+          />
+        </svg>
+        {props.children}
+      </li>
     );
   };
   return (
@@ -166,7 +188,7 @@ export default function Home() {
 
       {/*Web Hosting Price */}
       <div className="flex flex-col items-center m-10">
-        <h1 className="heading text-center mt-20 mb-10 w-6/12 sm:w-full">
+        <h1 className="heading text-center  mt-10 sm:mt-20 mb-10 w-8/12 sm:w-full">
           Choose Your Web Hosting Package
         </h1>
 
@@ -174,6 +196,28 @@ export default function Home() {
           {webHosting.map((plan) => (
             <PriceCardForWebHosting key={plan.title} {...plan} />
           ))}
+        </div>
+      </div>
+
+      {/* Features */}
+      {/* Feature1 Extra Security */}
+
+      <div className="m-10 sm:m-20">
+        <div>
+          <h1 className="heading">Extra Security</h1>
+          <ul className="mt-6">
+            {[
+              "Hard Secured Servers",
+              "DDoS Protected",
+              "Up to date servers at all times",
+            ].map((feature) => (
+              <ListFeature>{feature}</ListFeature>
+            ))}
+          </ul>
+        </div>
+
+        <div className="relative w-[10rem] h-[10rem]">
+          <MuslimManInTurban className="absolute w-[20rem]  h-[20rem]" />
         </div>
       </div>
     </Layout>
