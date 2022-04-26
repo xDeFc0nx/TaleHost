@@ -2,7 +2,7 @@ import { Fragment } from "react";
 
 const ListFeature = (props) => {
   return (
-    <li className="flex flex-row items-center">
+    <li className="flex flex-row justify-center items-center">
       <svg
         className="mr-4"
         width="18"
@@ -16,22 +16,13 @@ const ListFeature = (props) => {
           fill="#079552"
         />
       </svg>
-      {props.children}
+      <p className="w-8/12">{props.children}</p>
     </li>
   );
 };
 
 const Card = (props) => {
-  const {
-    title,
-    ram,
-    storage,
-    cpu,
-    bandwidth,
-    support,
-    price,
-    link,
-  } = props;
+  const { title, ram, storage, cpu, bandwidth, support, price, link } = props;
   return (
     <Fragment>
       <div className="w-[16.5rem] sm:w-[18rem] pt-6 sm:pt-2 pb-4 sm:pb-2 m-3 md:m-4 md:mt-12 2xl:m-10 flex flex-col justify-center items-center rounded-xl border-[1px]  hover:border-[#8D70FE] hover:scale-105 duration-400 transform transition">
@@ -41,15 +32,13 @@ const Card = (props) => {
         </h1>
 
         {/* list */}
-        <div className="flex justify-center sm:mt-2">
-          <ul className="font-medium text-[#808080]">
-            {[ram, storage, cpu, bandwidth, support ].map(
-              (list) => (
-                <ListFeature key={list}>{list}</ListFeature>
-              )
-            )}
-          </ul>
-        </div>
+
+        <ul className="font-medium text-[#808080]  sm:mt-2">
+          {[ram, storage, cpu, bandwidth, support].map((list) => (
+            <ListFeature key={list}>{list}</ListFeature>
+          ))}
+        </ul>
+
         {/* Price and CTA */}
         <div className="mt-10 mb-6 sm:mb-10 sm:mt-16 text-center">
           <h6 className=" font-bold text-2xl ">
