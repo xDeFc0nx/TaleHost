@@ -4,13 +4,14 @@ import Link from "next/link";
 import { Menu } from "@headlessui/react";
 
 import logo from "../../images/salafi-logo-resize.png";
+
 const Header = (props) => {
   function MyLink(props) {
     let { href, children, ...rest } = props;
     return (
       <div className=" flex-col">
         <Link href={href}>
-          <a {...rest} className="btn-primary">
+          <a {...rest} className="btn-primary text-white hover:text-gray-300">
             {children}
           </a>
         </Link>
@@ -29,11 +30,11 @@ const Header = (props) => {
 
       <nav className="inline-flex flex-col sm:flex-row space-x-2 2xl:space-x-4 lg:text-xs xl:text-sm 2xl:text-lg mr-2">
         <Menu>
-          <Menu.Button>
+          <Menu.Button className="sm:relative">
             <span className="btn-primary group ">
               Services
               <svg
-                className=" inline-block ml-1 fill-[#8D70FE] group-hover:fill-white	"
+                className=" inline-block ml-1  fill-[#8D70FE] group-hover:fill-white	"
                 width="18"
                 height="11"
                 viewBox="0 0 18 11"
@@ -43,25 +44,18 @@ const Header = (props) => {
                 <path d="M8.99997 10.414L0.292969 1.70697L1.70697 0.292969L8.99997 7.58597L16.293 0.292969L17.707 1.70697L8.99997 10.414Z" />
               </svg>
             </span>
+            <Menu.Items className="sm:absolute sm:top-12 sm:bg-salafi-primary-btn rounded-md py-4 w-[12rem] text-left space-y-2">
+              <Menu.Item>
+                <MyLink href="/web-hosting">Web hosting</MyLink>
+              </Menu.Item>
+              <Menu.Item>
+                <MyLink href="/discord-bot-hosting">Discord Bot hosting</MyLink>
+              </Menu.Item>
+              <Menu.Item>
+                <MyLink href="/minecraft-hosting">Minecraft hosting</MyLink>
+              </Menu.Item>
+            </Menu.Items>
           </Menu.Button>
-
-          <Menu.Items>
-            <Menu.Item>
-              <MyLink href="/web-hosting">
-                Web hosting
-              </MyLink>
-            </Menu.Item>
-            <Menu.Item>
-              <MyLink href="/discord-bot-hosting">
-                Discord Bot hosting
-              </MyLink>
-            </Menu.Item>
-            <Menu.Item>
-              <MyLink href="/minecraft-hosting">
-                Minecraft hosting
-              </MyLink>
-            </Menu.Item>
-          </Menu.Items>
         </Menu>
 
         <Link href="/about">
