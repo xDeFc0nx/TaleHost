@@ -9,7 +9,7 @@ import PriceCardForWebHosting from "../components/ui/PriceCardForWebHosting";
 import { servicesDescription } from "../public/constant/servicesDescription";
 import { pricesDescription } from "../public/constant/pricesDescription";
 import MuslimManInTurban from "../images/MuslimManInTurban";
-
+import Head from 'next/head'
 export default function Home() {
   const router = useRouter();
 
