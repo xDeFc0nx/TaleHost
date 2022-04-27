@@ -11,7 +11,10 @@ const Header = (props) => {
     return (
       <div className=" flex-col">
         <Link href={href}>
-          <a {...rest} className="btn-primary text-white hover:text-salafi-black">
+          <a
+            {...rest}
+            className="btn-primary sm:text-white hover:text-salafi-black"
+          >
             {children}
           </a>
         </Link>

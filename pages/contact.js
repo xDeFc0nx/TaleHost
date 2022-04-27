@@ -1,11 +1,8 @@
 import Head from "next/head";
+import Link from "next/link";
 import { Layout } from "../components/layout/Layout";
-import PriceCardForBotHosting from "../components/ui/PriceCardForBotHosting";
-import { pricesDescription } from "../public/constant/pricesDescription";
 
 export default function Home() {
-  const { botHosting } = pricesDescription;
-
   return (
     <Layout>
       <script
@@ -24,19 +21,23 @@ export default function Home() {
         }}
       />
       <Head>
-        <title>Discord Bot Hosting</title>
+        <title>Contact Us</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
-      {/*Web Hosting Price */}
-      <div className="flex flex-col items-center m-10">
-        <h1 className="heading text-center mt-20 mb-10 w-6/12 sm:w-full">
-          Choose Your Bot Hosting Package
-        </h1>
+      {/*About */}
 
-        <div className="flex flex-wrap gap-10 justify-center">
-          {botHosting.map((plan) => (
-            <PriceCardForBotHosting key={plan.title} {...plan} />
-          ))}
+      <div className="flex flex-col justify-center items-center px-10 sm:py-10 sm:px-80">
+        <h1 className="heading">Contact US</h1>
+        <div className="flex flex-col space-y-4 my-4">
+          <Link href="tel:+123456789">
+            <a>Phone Number Add Here</a>
+          </Link>
+          <Link href="mailto:salafihostin@gmailcom.com">
+            <a>Email Address Add Here</a>
+          </Link>
+          <Link href="https://discord.gg/eWsYZZz9Nz">
+            <a>Discord</a>
+          </Link>
         </div>
       </div>
     </Layout>

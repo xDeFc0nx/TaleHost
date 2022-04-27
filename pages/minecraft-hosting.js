@@ -1,17 +1,8 @@
-import Image from "next/image";
-import { Layout } from "../components/layout/Layout";
-import styles from "../styles/Home.module.css";
-import heroTower from "../images/hero-tower.svg";
-import ServiceCard from "../components/ui/ServiceCard";
-import PriceCardForMinecraftHosting from "../components/ui/PriceCardForMinecraftHosting";
 import Head from "next/head";
-import { useRouter } from "next/router";
-import { servicesDescription } from "../public/constant/servicesDescription";
+import { Layout } from "../components/layout/Layout";
+import PriceCardForMinecraftHosting from "../components/ui/PriceCardForMinecraftHosting";
 import { pricesDescription } from "../public/constant/pricesDescription";
-const { mineCraftHosting } = pricesDescription;
 export default function Home() {
-  const router = useRouter();
-
   const { mineCraftHosting } = pricesDescription;
 
   return (

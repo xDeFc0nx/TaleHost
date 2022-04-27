@@ -27,7 +27,7 @@ const Footer = (props) => {
     );
   };
   return (
-    <footer className="w-full bg-[#7721FF] p-10 px-14 text-[#E6E6E6] ">
+    <footer className="w-full bg-[#7721FF] p-10 px-16 text-[#E6E6E6] ">
       <div className="flex flex-col sm:flex-row">
         {/* Logo and Description */}
         <div className="sm:w-6/12 ">
@@ -75,11 +75,6 @@ const Footer = (props) => {
               <h1 className="font-bold mb-2 ">Company</h1>
             </li>
             <li>
-              <Link href="/about">
-                <a>About</a>
-              </Link>
-            </li>
-            <li>
               <Link href="https://discord.gg/eWsYZZz9Nz">
                 <a>Discord</a>
               </Link>
@@ -89,13 +84,18 @@ const Footer = (props) => {
                 <a>Contact</a>
               </Link>
             </li>
+            <li>
+              <Link href="/about">
+                <a>About</a>
+              </Link>
+            </li>
           </ul>
           <ul className="mt-5 space-y-1">
             <li>
               <h1 className="font-bold mb-2 ">Help</h1>
             </li>
             <li>
-              <Link href="/about">
+              <Link href="https://discord.gg/eWsYZZz9Nz">
                 <a>24 &#47;7 Support</a>
               </Link>
             </li>
@@ -103,7 +103,9 @@ const Footer = (props) => {
         </div>
       </div>
       <div className=" sm:mt-20">
-        <h1 className="lg:text-xl  text-black">{year} &copy; Salafi Hosting LLC</h1>
+        <h1 className="lg:text-xl  text-black">
+          {year} &copy; Salafi Hosting LLC
+        </h1>
       </div>
     </footer>
   );

@@ -8,11 +8,12 @@ import styles from "../styles/Home.module.css";
 import heroTower from "../images/hero-tower.svg";
 import ServiceCard from "../components/ui/ServiceCard";
 import PriceCardForWebHosting from "../components/ui/PriceCardForWebHosting";
-import { servicesDescription } from "../public/constant/servicesDescription";
 import { pricesDescription } from "../public/constant/pricesDescription";
+import { servicesDescription } from "../public/constant/servicesDescription";
 import muslimManInTurban from "../images/muslimManInTurban.svg";
 import simpleAndFastWeb from "../images/simpleAndFastWeb.svg";
 import supportFeature from "../images/supportFeature.svg";
+import ScrollToTop from "../components/utilities/ScrollToTop";
 
 export default function Home() {
   const router = useRouter();
@@ -326,6 +327,7 @@ export default function Home() {
           />
         </svg>
       </div>
+      <ScrollToTop />
     </Layout>
   );
 }
