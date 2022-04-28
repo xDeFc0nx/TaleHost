@@ -239,7 +239,7 @@ export default function Home() {
               Simply and fast website
             </h1>
             <ul className="mt-6  2xl:text-2xl">
-              {["1GBPS internet speed at all times", "99.99% Down time"].map(
+              {["1gbps internet speed at all times", "99.99% up time"].map(
                 (feature) => (
                   <ListFeature key={feature}>{feature}</ListFeature>
                 )
