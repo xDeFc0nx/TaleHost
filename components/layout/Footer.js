@@ -39,7 +39,7 @@ const Footer = (props) => {
             </Link>
           </div>
           <p className="sm:w-10/12 md:w-6/12  mt-4">
-            By using Salafi Hosting's website and services, you agree to our
+            By using Salafi Hosting website and services, you agree to our
             Terms of Service and Privacy Policy.
           </p>
         </div>
