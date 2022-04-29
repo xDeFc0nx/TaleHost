@@ -23,7 +23,7 @@ export default function Home() {
     e.preventDefault();
     const domainName = e.target[0].value;
     router.push(
-      `https://panel.salafihosting.com/cart.php?a=add&domain=register&query=${domainName}`
+      `https://billing.salafihosting.com/cart.php?a=add&domain=register&query=${domainName}`
     );
   };
 
@@ -276,7 +276,7 @@ export default function Home() {
         </h1>
 
         <button className="py-2 px-4 mt-8 rounded-lg shadow-sm text-salafi-black bg-white font-medium hover:bg-salafi-grey-white ">
-          <Link href="https://panel.salafihosting.com/index.php">
+          <Link href="https://billing.salafihosting.com/index.php">
             <a>Get started</a>
           </Link>
         </button>
