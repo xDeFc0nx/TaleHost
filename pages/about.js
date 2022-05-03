@@ -42,7 +42,7 @@ export default function Home() {
               electronic typesetting, remaining essentially unchanged
             </p>
           </div>
-          <div className="relative w-[12rem] sm:w-[18rem] h-full mx-auto mt-10 sm:mt-20">
+          <div className="relative w-[12rem] sm:w-[18rem] h-100% mx-auto mt-10 sm:mt-20">
             <Image src={Teamwork}></Image>
           </div>
         </div>
