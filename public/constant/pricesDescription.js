@@ -7,7 +7,7 @@ export const pricesDescription = {
       storage: "25 GB Storage",
       securityFeature: "Free SSL",
       emailAccount: "1 Email Account",
-      price: "$3.99",
+      price: "$1",
       link: "https://billing.salafihosting.com/index.php?rp=/store/website-hosting/basic",
     },
     {
@@ -17,7 +17,7 @@ export const pricesDescription = {
       storage: "50 GB Storage",
       securityFeature: "Free SSL",
       emailAccount: "3 Email Account",
-      price: "$6.99",
+      price: "$4.99",
       link: "https://billing.salafihosting.com/index.php?rp=/store/website-hosting/starter",
     },
     {

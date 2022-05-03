@@ -65,10 +65,6 @@ const Header = (props) => {
           <a className="btn-primary">About</a>
         </Link>
 
-        <Link href="/contact">
-          <a className="btn-primary">Contact</a>
-        </Link>
-
         <Link href="https://discord.gg/eWsYZZz9Nz">
           <a className="btn-primary">Discord</a>
         </Link>
