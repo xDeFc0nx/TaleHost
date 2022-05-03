@@ -86,7 +86,7 @@ export default function Home() {
               </li>
             </ul>
           </div>
-          <div className="relative w-[12rem] sm:w-[18rem] h-full mx-auto mt-10 sm:mt-20">
+          <div className="relative w-[12rem] sm:w-[18rem] mx-auto mt-10 sm:mt-20">
             <Image src={Envolpe}></Image>
           </div>
         </div>
