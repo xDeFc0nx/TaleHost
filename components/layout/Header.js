@@ -60,17 +60,15 @@ const Header = (props) => {
             </Menu.Items>
           </Menu.Button>
         </Menu>
-
-        <Link href="/about">
-          <a className="btn-primary">About</a>
+        
+        <Link href="https://discord.gg/eWsYZZz9Nz">
+          <a className="btn-primary">Discord</a>
         </Link>
-
         <Link href="/contact">
           <a className="btn-primary">Contact</a>
         </Link>
-
-        <Link href="https://discord.gg/eWsYZZz9Nz">
-          <a className="btn-primary">Discord</a>
+        <Link href="/about">
+          <a className="btn-primary">About</a>
         </Link>
       </nav>
       <Link href="https://billing.salafihosting.com/index.php?rp=/login">
