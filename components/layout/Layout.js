@@ -8,7 +8,7 @@ export const Layout = (props) => {
     <Fragment>
       <Header />
       <main>{props.children}</main>
-      <Footer/>
+      <Footer />
     </Fragment>
   );
 };
