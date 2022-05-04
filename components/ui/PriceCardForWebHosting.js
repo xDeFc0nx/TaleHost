@@ -29,6 +29,7 @@ const Card = (props) => {
     storage,
     securityFeature,
     emailAccount,
+    databases,
     price,
     link,
   } = props;
@@ -43,7 +44,7 @@ const Card = (props) => {
         {/* list */}
         <div className="flex justify-center sm:mt-2">
           <ul className="font-medium text-[#808080]">
-            {[domain, subDomains, storage, securityFeature, emailAccount].map(
+            {[domain, subDomains, storage, securityFeature, databases, emailAccount].map(
               (list) => (
                 <ListFeature key={list}>{list}</ListFeature>
               )
