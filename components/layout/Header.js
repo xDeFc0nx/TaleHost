@@ -96,7 +96,7 @@ export default function Example() {
         <Link href={href}>
           <a
             {...rest}
-            className="btn-primary sm:text-white hover:text-salafi-black pl-2"
+            className="btn-primary sm:text-white hover:text-salafi-black "
           >
             {children}
           </a>
@@ -120,7 +120,7 @@ export default function Example() {
                 </div>
                 <div className="hidden sm:block">
                   <div className="ml-10 flex items-baseline space-x-4">
-                    <header className="  flex flex-col  sm:flex-row sm:justify-between sm:items-center space-y-2 sm:space-y-0 p-10 sm:px-20 sm:py-2 2xl:mt-6 text-salafi-heading   ">
+                    <header className="  flex flex-col  sm:flex-row sm:justify-between sm:items-center space-y-2 sm:space-y-0 p-10 sm:px-20 sm:py-2 text-salafi-heading   ">
                       <nav className="inline-flex flex-col sm:flex-row space-x-2 2xl:space-x-4 lg:text-xs xl:text-sm 2xl:text-lg mr-2">
                         <Menu>
                           <Menu.Button className="sm:relative">
