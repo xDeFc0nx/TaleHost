@@ -42,7 +42,7 @@ export const pricesDescription = {
       emailAccount: "Unlimited Email Account",
       databases: "Unlimited MySQL Databases",
       price: "$19.99",
-      link: "https://billing.salafihosting.com/index.php?rp=/store/website-hosting/premium-hosting",
+      link: "https://billing.salafihosting.com/index.php?rp=/store/website-hosting/ultimate-hosting",
   },
 
   ],
