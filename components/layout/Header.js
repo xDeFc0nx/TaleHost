@@ -1,11 +1,94 @@
-import Head from "next/head";
+// import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
-import { Menu } from "@headlessui/react";
+// import { Menu } from "@headlessui/react";
 
 import logo from "../../images/salafi-logo-resize.png";
 
-const Header = (props) => {
+// const Header = (props) => {
+// function MyLink(props) {
+//   let { href, children, ...rest } = props;
+//   return (
+//     <div className=" flex-col">
+//       <Link href={href}>
+//         <a
+//           {...rest}
+//           className="btn-primary sm:text-white hover:text-salafi-black"
+//         >
+//           {children}
+//         </a>
+//       </Link>
+//     </div>
+//   );
+// }
+//   return (
+// <header className="  flex flex-col  sm:flex-row sm:justify-between sm:items-center space-y-2 sm:space-y-0 p-10 sm:px-20 sm:py-2 2xl:mt-6 text-salafi-heading   ">
+//   <div className="relative w-12 h-12 2xl:w-16 2xl:h-16">
+//     <Link href="/">
+//       <a>
+//         <Image src={logo} alt="logo>" layout="fill" />
+//       </a>
+//     </Link>
+//   </div>
+
+//   <nav className="inline-flex flex-col sm:flex-row space-x-2 2xl:space-x-4 lg:text-xs xl:text-sm 2xl:text-lg mr-2">
+//     <Menu>
+//       <Menu.Button className="sm:relative">
+//         <span className="btn-primary group ">
+//           Services
+//           <svg
+//             className=" inline-block ml-1  fill-[#8D70FE] group-hover:fill-white	"
+//             width="18"
+//             height="11"
+//             viewBox="0 0 18 11"
+//             fill="none"
+//             xmlns="http://www.w3.org/2000/svg"
+//           >
+//             <path d="M8.99997 10.414L0.292969 1.70697L1.70697 0.292969L8.99997 7.58597L16.293 0.292969L17.707 1.70697L8.99997 10.414Z" />
+//           </svg>
+//         </span>
+//         <Menu.Items className="sm:absolute sm:top-12 sm:bg-salafi-primary-btn  rounded-md py-4 w-[12rem] text-left space-y-2">
+//           <Menu.Item>
+//             <MyLink href="/web-hosting">Web hosting</MyLink>
+//           </Menu.Item>
+//           <Menu.Item>
+//             <MyLink href="/discord-bot-hosting">Discord Bot hosting</MyLink>
+//           </Menu.Item>
+//           <Menu.Item>
+//             <MyLink href="/minecraft-hosting">Minecraft hosting</MyLink>
+//           </Menu.Item>
+//         </Menu.Items>
+//       </Menu.Button>
+//     </Menu>
+
+//     <Link href="https://discord.gg/eWsYZZz9Nz">
+//       <a className="btn-primary">Discord</a>
+//     </Link>
+//     <Link href="/contact">
+//       <a className="btn-primary">Contact</a>
+//     </Link>
+//     <Link href="/about">
+//       <a className="btn-primary">About</a>
+//     </Link>
+//   </nav>
+//   <Link href="https://billing.salafihosting.com/index.php?rp=/login">
+//     <a className="btn-primary bg-salafi-blue-light text-white hover:bg-salafi-blue   rounded-1 py-2 px-8">
+//       Login
+//     </a>
+//   </Link>
+// </header>
+//   );
+// };
+
+import { Fragment } from "react";
+import { Disclosure, Menu, Transition } from "@headlessui/react";
+import { BellIcon, MenuIcon, XIcon } from "@heroicons/react/outline";
+
+function classNames(...classes) {
+  return classes.filter(Boolean).join(" ");
+}
+
+export default function Example() {
   function MyLink(props) {
     let { href, children, ...rest } = props;
     return (
@@ -13,7 +96,7 @@ const Header = (props) => {
         <Link href={href}>
           <a
             {...rest}
-            className="btn-primary sm:text-white hover:text-salafi-black"
+            className="btn-primary sm:text-white hover:text-salafi-black pl-2"
           >
             {children}
           </a>
@@ -22,62 +105,144 @@ const Header = (props) => {
     );
   }
   return (
-    <header className="  flex flex-col  sm:flex-row sm:justify-between sm:items-center space-y-2 sm:space-y-0 p-10 sm:px-20 sm:py-2 2xl:mt-6 text-salafi-heading   ">
-      <div className="relative w-12 h-12 2xl:w-16 2xl:h-16">
-        <Link href="/">
-          <a>
-            <Image src={logo} alt="logo>" layout="fill" />
-          </a>
-        </Link>
-      </div>
+    <div className="min-h-full">
+      <Disclosure as="nav" className="">
+        {({ open }) => (
+          <>
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+              <div className="flex items-center justify-between h-16">
+                <div className="relative w-12 h-12 2xl:w-16 2xl:h-16">
+                  <Link href="/">
+                    <a>
+                      <Image src={logo} alt="logo>" layout="fill" />
+                    </a>
+                  </Link>
+                </div>
+                <div className="hidden sm:block">
+                  <div className="ml-10 flex items-baseline space-x-4">
+                    <header className="  flex flex-col  sm:flex-row sm:justify-between sm:items-center space-y-2 sm:space-y-0 p-10 sm:px-20 sm:py-2 2xl:mt-6 text-salafi-heading   ">
+                      <nav className="inline-flex flex-col sm:flex-row space-x-2 2xl:space-x-4 lg:text-xs xl:text-sm 2xl:text-lg mr-2">
+                        <Menu>
+                          <Menu.Button className="sm:relative">
+                            <span className="btn-primary group ">
+                              Services
+                              <svg
+                                className=" inline-block ml-1  fill-[#8D70FE] group-hover:fill-white	"
+                                width="18"
+                                height="11"
+                                viewBox="0 0 18 11"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path d="M8.99997 10.414L0.292969 1.70697L1.70697 0.292969L8.99997 7.58597L16.293 0.292969L17.707 1.70697L8.99997 10.414Z" />
+                              </svg>
+                            </span>
+                            <Menu.Items className="sm:absolute sm:top-12 sm:bg-salafi-primary-btn  rounded-md py-4 w-[12rem] text-left space-y-2">
+                              <Menu.Item>
+                                <MyLink href="/web-hosting">Web hosting</MyLink>
+                              </Menu.Item>
+                              <Menu.Item>
+                                <MyLink href="/discord-bot-hosting">
+                                  Discord Bot hosting
+                                </MyLink>
+                              </Menu.Item>
+                              <Menu.Item>
+                                <MyLink href="/minecraft-hosting">
+                                  Minecraft hosting
+                                </MyLink>
+                              </Menu.Item>
+                            </Menu.Items>
+                          </Menu.Button>
+                        </Menu>
 
-      <nav className="inline-flex flex-col sm:flex-row space-x-2 2xl:space-x-4 lg:text-xs xl:text-sm 2xl:text-lg mr-2">
-        <Menu>
-          <Menu.Button className="sm:relative">
-            <span className="btn-primary group ">
-              Services
-              <svg
-                className=" inline-block ml-1  fill-[#8D70FE] group-hover:fill-white	"
-                width="18"
-                height="11"
-                viewBox="0 0 18 11"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path d="M8.99997 10.414L0.292969 1.70697L1.70697 0.292969L8.99997 7.58597L16.293 0.292969L17.707 1.70697L8.99997 10.414Z" />
-              </svg>
-            </span>
-            <Menu.Items className="sm:absolute sm:top-12 sm:bg-salafi-primary-btn  rounded-md py-4 w-[12rem] text-left space-y-2">
-              <Menu.Item>
-                <MyLink href="/web-hosting">Web hosting</MyLink>
-              </Menu.Item>
-              <Menu.Item>
-                <MyLink href="/discord-bot-hosting">Discord Bot hosting</MyLink>
-              </Menu.Item>
-              <Menu.Item>
-                <MyLink href="/minecraft-hosting">Minecraft hosting</MyLink>
-              </Menu.Item>
-            </Menu.Items>
-          </Menu.Button>
-        </Menu>
-        
-        <Link href="https://discord.gg/eWsYZZz9Nz">
-          <a className="btn-primary">Discord</a>
-        </Link>
-        <Link href="/contact">
-          <a className="btn-primary">Contact</a>
-        </Link>
-        <Link href="/about">
-          <a className="btn-primary">About</a>
-        </Link>
-      </nav>
-      <Link href="https://billing.salafihosting.com/index.php?rp=/login">
-        <a className="btn-primary bg-salafi-blue-light text-white hover:bg-salafi-blue   rounded-1 py-2 px-8">
-          Login
-        </a>
-      </Link>
-    </header>
+                        <Link href="https://discord.gg/eWsYZZz9Nz">
+                          <a className="btn-primary">Discord</a>
+                        </Link>
+                        <Link href="/contact">
+                          <a className="btn-primary">Contact</a>
+                        </Link>
+                        <Link href="/about">
+                          <a className="btn-primary">About</a>
+                        </Link>
+                      </nav>
+                    </header>
+                  </div>
+                </div>
+                <div className="hidden sm:block">
+                  <Link href="https://billing.salafihosting.com/index.php?rp=/login">
+                    <a className="btn-primary bg-salafi-blue-light text-white hover:bg-salafi-blue   rounded-1 py-2 px-8">
+                      Login
+                    </a>
+                  </Link>
+                </div>
+                <div className="-mr-2 flex sm:hidden">
+                  {/* Mobile menu button */}
+                  <Disclosure.Button className="bg-salafi-primary-btn inline-flex items-center justify-center p-2 rounded-md text-white hover:text-black hover:bg-salafi-blue-light">
+                    <span className="sr-only">Open main menu</span>
+                    {open ? (
+                      <XIcon className="block h-6 w-6" aria-hidden="true" />
+                    ) : (
+                      <MenuIcon className="block h-6 w-6 " aria-hidden="true" />
+                    )}
+                  </Disclosure.Button>
+                </div>
+              </div>
+            </div>
+
+            <Disclosure.Panel className="md:hidden">
+              <nav className="inline-flex flex-col sm:flex-row space-x-2 2xl:space-x-4 lg:text-xs xl:text-sm 2xl:text-lg mr-2">
+                <Menu>
+                  <Menu.Button className="sm:relative">
+                    <span className="btn-primary group ">
+                      Services
+                      <svg
+                        className=" inline-block ml-1  fill-[#8D70FE] group-hover:fill-white	"
+                        width="18"
+                        height="11"
+                        viewBox="0 0 18 11"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path d="M8.99997 10.414L0.292969 1.70697L1.70697 0.292969L8.99997 7.58597L16.293 0.292969L17.707 1.70697L8.99997 10.414Z" />
+                      </svg>
+                    </span>
+                    <Menu.Items className="sm:absolute sm:top-12 sm:bg-salafi-primary-btn  rounded-md py-4 w-[12rem] text-left space-y-2">
+                      <Menu.Item>
+                        <MyLink href="/web-hosting">Web hosting</MyLink>
+                      </Menu.Item>
+                      <Menu.Item>
+                        <MyLink href="/discord-bot-hosting">
+                          Discord Bot hosting
+                        </MyLink>
+                      </Menu.Item>
+                      <Menu.Item>
+                        <MyLink href="/minecraft-hosting">
+                          Minecraft hosting
+                        </MyLink>
+                      </Menu.Item>
+                    </Menu.Items>
+                  </Menu.Button>
+                </Menu>
+
+                <Link href="https://discord.gg/eWsYZZz9Nz">
+                  <a className="btn-primary">Discord</a>
+                </Link>
+                <Link href="/contact">
+                  <a className="btn-primary">Contact</a>
+                </Link>
+                <Link href="/about">
+                  <a className="btn-primary">About</a>
+                </Link>
+              </nav>
+              <Link href="https://billing.salafihosting.com/index.php?rp=/login">
+                <a className="btn-primary bg-salafi-blue-light text-white hover:bg-salafi-blue   rounded-1 py-2 px-8">
+                  Login
+                </a>
+              </Link>
+            </Disclosure.Panel>
+          </>
+        )}
+      </Disclosure>
+    </div>
   );
-};
-
-export default Header;
+}
