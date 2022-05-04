@@ -13,7 +13,7 @@ export const pricesDescription = {
     },
     {
       title: "Starter",
-      domain: "10 Domains",
+      domain: "3 Domains",
       subDomains: "10 Subdomains",
       storage: "50 GB Storage",
       securityFeature: "Free SSL",
@@ -24,7 +24,7 @@ export const pricesDescription = {
     },
     {
       title: "Premium",
-      domain: "30 Domains",
+      domain: "5 Domains",
       subDomains: "30 Subdomains",
       storage: "80 GB Storage",
       securityFeature: "Free SSL",
