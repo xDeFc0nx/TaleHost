@@ -3,8 +3,19 @@ import Image from "next/image";
 import Link from "next/link";
 import { Menu } from "@headlessui/react";
 import logo from "../../images/salafi-logo-resize.png";
+import { useState, Fragment } from "react";
+import SideDrawer from "../navigation/SideDrawer";
 
 const Header = (props) => {
+  const [drawerIsOpen, setDrawerIsOpen] = useState(false);
+  const openDrawerHandler = () => {
+    setDrawerIsOpen(true);
+    console.log(drawerIsOpen);
+  };
+  const closeDrawerHandler = () => {
+    setDrawerIsOpen(false);
+    console.log(drawerIsOpen);
+  };
   function MyLink(props) {
     let { href, children, ...rest } = props;
     return (
@@ -21,63 +32,120 @@ const Header = (props) => {
     );
   }
   return (
-    <header className="  flex flex-col  sm:flex-row sm:justify-between sm:items-center space-y-2 sm:space-y-0 p-10 sm:px-20 sm:py-2  text-salafi-heading   ">
-      <div className="relative w-12 h-12 2xl:w-16 2xl:h-16">
-        <Link href="/">
-          <a>
-            <Image src={logo} alt="logo>" layout="fill" />
-          </a>
-        </Link>
-      </div>
-
-      <nav className="hidden md:inline-flex  flex-col sm:flex-row  space-x-4 2xl:space-x-4 lg:text-xs xl:text-sm 2xl:text-2xl mr-2">
-        <Menu>
-          <Menu.Button className="sm:relative">
-            <span className="btn-primary group ">
-              Services
-              <svg
-                className=" inline-block ml-1  fill-[#8D70FE] group-hover:fill-white	"
-                width="18"
-                height="11"
-                viewBox="0 0 18 11"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
+    <Fragment>
+      <SideDrawer show={drawerIsOpen} onClick={closeDrawerHandler}>
+        <div className="p-5 bg-salafi-grey-white sm:px-20 sm:py-2">
+          <div className="flex justify-between ">
+            <div className="relative w-12 h-12 2xl:w-16 2xl:h-16">
+              <Link href="/">
+                <a>
+                  <Image src={logo} alt="logo>" layout="fill" />
+                </a>
+              </Link>
+            </div>
+            <div className="block md:hidden group">
+              <button
+                className="w-[2.5rem] h-[2.6rem] bg-transparent   flex flex-col justify-around cursor-pointer"
+                onClick={openDrawerHandler}
               >
-                <path d="M8.99997 10.414L0.292969 1.70697L1.70697 0.292969L8.99997 7.58597L16.293 0.292969L17.707 1.70697L8.99997 10.414Z" />
-              </svg>
-            </span>
-            <Menu.Items className="sm:absolute sm:top-12 sm:bg-salafi-primary-btn  rounded-md py-4 px-2 lg:px-0 w-[12rem] text-left space-y-2">
-              <Menu.Item>
-                <MyLink href="/web-hosting">Web hosting</MyLink>
-              </Menu.Item>
-              <Menu.Item>
-                <MyLink href="/discord-bot-hosting">Discord Bot hosting</MyLink>
-              </Menu.Item>
-              <Menu.Item>
-                <MyLink href="/minecraft-hosting">Minecraft hosting</MyLink>
-              </Menu.Item>
-            </Menu.Items>
-          </Menu.Button>
-        </Menu>
+                <span className="block w-[2.5rem] h-[2px] bg-salafi-primary-btn rotate-45   origin-top-left"></span>
+                <span className="block w-[2.5rem] h-[2px] bg-salafi-primary-btn opacity-0"></span>
+                <span className="block w-[2.5rem] h-[2px] bg-salafi-primary-btn -rotate-45   origin-top-left"></span>
+              </button>
+            </div>
+          </div>
+          <nav className="flex flex-col items-center ">
+            <Link href="/web-hosting">
+              <a className="btn-primary">Web Hosting</a>
+            </Link>
+            <Link href="/discord-bot-hosting">
+              <a className="btn-primary">Discord Bot Hosting</a>
+            </Link>
+            <Link href="/minecraft-hosting">
+              <a className="btn-primary">Minecraft Hosting</a>
+            </Link>
+            <Link href="https://discord.gg/eWsYZZz9Nz">
+              <a className="btn-primary">Discord</a>
+            </Link>
+            <Link href="/contact">
+              <a className="btn-primary">Contact</a>
+            </Link>
+            <Link href="/about">
+              <a className="btn-primary">About</a>
+            </Link>
+          </nav>
+        </div>
+      </SideDrawer>
+      <header className="  flex justify-between  sm:flex-row sm:justify-between sm:items-center  sm:space-y-0 p-5 sm:px-20 sm:py-2  text-salafi-heading   ">
+        <div className="relative w-12 h-12 2xl:w-16 2xl:h-16">
+          <Link href="/">
+            <a>
+              <Image src={logo} alt="logo>" layout="fill" />
+            </a>
+          </Link>
+        </div>
 
-        <Link href="https://discord.gg/eWsYZZz9Nz">
-          <a className="btn-primary">Discord</a>
-        </Link>
-        <Link href="/contact">
-          <a className="btn-primary">Contact</a>
-        </Link>
-        <Link href="/about">
-          <a className="btn-primary">About</a>
-        </Link>
-      </nav>
-      <div className="hidden md:block">
-        <Link href="https://billing.salafihosting.com/index.php?rp=/login">
-          <a className="btn-primary bg-salafi-blue-light text-white hover:bg-salafi-blue   rounded-1 py-2 px-8">
-            Login
-          </a>
-        </Link>
-      </div>
-    </header>
+        <nav className="hidden md:inline-flex  flex-col sm:flex-row  space-x-4 2xl:space-x-4 lg:text-xs xl:text-sm 2xl:text-2xl mr-2">
+          <Menu>
+            <Menu.Button className="sm:relative">
+              <span className="btn-primary group ">
+                Services
+                <svg
+                  className=" inline-block ml-1  fill-[#8D70FE] group-hover:fill-white	"
+                  width="18"
+                  height="11"
+                  viewBox="0 0 18 11"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M8.99997 10.414L0.292969 1.70697L1.70697 0.292969L8.99997 7.58597L16.293 0.292969L17.707 1.70697L8.99997 10.414Z" />
+                </svg>
+              </span>
+              <Menu.Items className="sm:absolute sm:top-12 sm:bg-salafi-primary-btn  rounded-md py-4 px-2 lg:px-0 w-[12rem] text-left space-y-2">
+                <Menu.Item>
+                  <MyLink href="/web-hosting">Web hosting</MyLink>
+                </Menu.Item>
+                <Menu.Item>
+                  <MyLink href="/discord-bot-hosting">
+                    Discord Bot hosting
+                  </MyLink>
+                </Menu.Item>
+                <Menu.Item>
+                  <MyLink href="/minecraft-hosting">Minecraft hosting</MyLink>
+                </Menu.Item>
+              </Menu.Items>
+            </Menu.Button>
+          </Menu>
+
+          <Link href="https://discord.gg/eWsYZZz9Nz">
+            <a className="btn-primary">Discord</a>
+          </Link>
+          <Link href="/contact">
+            <a className="btn-primary">Contact</a>
+          </Link>
+          <Link href="/about">
+            <a className="btn-primary">About</a>
+          </Link>
+        </nav>
+        <div className="hidden md:block">
+          <Link href="https://billing.salafihosting.com/index.php?rp=/login">
+            <a className="btn-primary bg-salafi-blue-light text-white hover:bg-salafi-blue   rounded-1 py-2 px-8">
+              Login
+            </a>
+          </Link>
+        </div>
+        <div className="block md:hidden group">
+          <button
+            className="w-[2.5rem] h-[2.6rem] bg-transparent   flex flex-col justify-around cursor-pointer"
+            onClick={openDrawerHandler}
+          >
+            <span className="block w-[2.5rem] h-[2px] bg-salafi-primary-btn  group-active:rotate-45 transition-transform origin-top-left"></span>
+            <span className="block w-[2.5rem] h-[2px] bg-salafi-primary-btn group-hover:translate-x-2 transition-transform group-active:opacity-0"></span>
+            <span className="block w-[2.5rem] h-[2px] bg-salafi-primary-btn  group-active:-rotate-45 transition-transform origin-top-left"></span>
+          </button>
+        </div>
+      </header>
+    </Fragment>
   );
 };
 
