@@ -2,7 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import { Menu } from "@headlessui/react";
-import logo from "../../images/salafi-logo-resize.png";
+import logo from "../../images/Salafi-Logo.svg";
 import { useState, Fragment } from "react";
 import SideDrawer from "../navigation/SideDrawer";
 

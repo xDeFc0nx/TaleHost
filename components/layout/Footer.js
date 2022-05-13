@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
-import logo from "../../images/salafi-logo-resize.png";
+import logo from "../../images/Salafi-Logo.svg";
 
 const Footer = (props) => {
   const date = new Date();
