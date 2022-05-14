@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
@@ -47,6 +48,14 @@ export default function Home() {
       </li>
     );
   };
+
+  // // Maintain state for theme
+  // useEffect(() => {
+  //   let htmlClasses = document.querySelector("html").classList;
+  //   if (localStorage.theme === "dark") {
+  //     htmlClasses.add("dark");
+  //   }
+  // }, []);
   return (
     <Layout>
       <Head>
@@ -69,7 +78,7 @@ export default function Home() {
         }}
       />
       {/* Call to Action */}
-      <div className="sm:py-20 bg-salafi-grey-white space-y-10">
+      <div className="sm:py-20 bg-salafi-grey-white dark:bg-salafi-black space-y-10">
         {/* Hero */}
         <div className="p-10 sm:p-0 grid grid-cols-12 place-items-center  ">
           <h1 className="heading col-span-12 sm:col-span-6 self-start sm:w-9/12 pb-10 text-center sm:text-left">
