@@ -100,7 +100,7 @@ const Header = (props) => {
           </Link>
         </div>
 
-        <nav className="hidden md:inline-flex  flex-col sm:flex-row  space-x-4 2xl:space-x-4 lg:text-xs xl:text-sm 2xl:text-2xl mr-2">
+        <nav className="hidden md:inline-flex  flex-col sm:flex-row  space-x-4 2xl:space-x-4 lg:text-sm xl:text-sm 2xl:text-2xl mr-2">
           <Menu>
             <Menu.Button className="sm:relative">
               <span className="btn-primary group ">
