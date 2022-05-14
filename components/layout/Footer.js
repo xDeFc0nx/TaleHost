@@ -27,7 +27,7 @@ const Footer = (props) => {
     );
   };
   return (
-    <footer className="w-full bg-[#7721FF] p-10 px-16 text-[#E6E6E6] ">
+    <footer className="w-full bg-[#1B1B27] p-10 px-16 text-[#E6E6E6] ">
       <div className="flex flex-col sm:flex-row">
         {/* Logo and Description */}
         <div className="sm:w-6/12 ">
@@ -103,7 +103,7 @@ const Footer = (props) => {
         </div>
       </div>
       <div className=" sm:mt-20">
-        <h1 className="lg:text-xl  text-black">
+        <h1 className="lg:text-xl  text-white">
           {year} &copy; Salafi Hosting LLC
         </h1>
       </div>

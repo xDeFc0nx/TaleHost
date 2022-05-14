@@ -16,7 +16,8 @@ module.exports = {
       colors: {
         "salafi-heading": "#2E2E2E",
         "salafi-body": "#808080",
-        "salafi-black": "#000000",
+        "salafi-black": "#1B1B27",
+        "salafi-light-black": "#24242F",
         "salafi-grey-white": "#E9E9E9",
         "salafi-primary-btn": "#8D70FE",
       },

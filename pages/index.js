@@ -81,7 +81,7 @@ export default function Home() {
       <div className="sm:py-20 bg-salafi-grey-white dark:bg-salafi-black space-y-10">
         {/* Hero */}
         <div className="p-10 sm:p-0 grid grid-cols-12 place-items-center  ">
-          <h1 className="heading col-span-12 sm:col-span-6 self-start sm:w-9/12 pb-10 text-center sm:text-left">
+          <h1 className="heading col-span-12 sm:col-span-6 self-start sm:w-9/12 pb-10 text-center sm:text-left dark:sm:text-white">
             Reliable Web Hosting Platform for Your Website
           </h1>
           <div className="relative col-span-12 sm:col-span-6 m-2">
@@ -126,7 +126,7 @@ export default function Home() {
         </div>
 
         {/* Services */}
-        <div className="flex flex-col sm:flex-row sm:flex-wrap p-10  sm:px-10 justify-center  gap-10">
+        <div className="flex flex-col sm-10 sm:flex-row sm:flex-wrap p-10  sm:px-10 justify-center  gap-10 dark:sm:text-white ">
           {servicesDescription.map((service) => (
             <ServiceCard key={service.title} {...service} />
           ))}
@@ -143,7 +143,7 @@ export default function Home() {
 
           <form className="mt-10 relative" onSubmit={domainFindHandler}>
             <input
-              className="sm:relative sm:w-[35rem] sm:h-[3rem] rounded-md shadow-sm p-2 outline-none"
+              className="sm:relative sm:w-[35rem] sm:h-[3rem] dark:bg-salafi-light-black rounded-md shadow-sm p-2 outline-none"
               type="text"
               placeholder="Search your domain name"
             />
@@ -203,13 +203,15 @@ export default function Home() {
         </div>
       </div>
 
+      <div className="dark:bg-salafi-light-black  dark:sm:text-white">
       {/*Web Hosting Price */}
-      <div className="flex flex-col items-center m-10">
-        <h1 className="heading text-center  mt-10 sm:mt-20 mb-10 w-8/12 sm:w-full">
+
+      <div className="flex flex-col items-center sm-10 ">
+        <h1 className="heading text-center  mt-10 sm:mt-20 mb-10 w-8/12 sm:w-full dark:sm:text-white">
           Choose Your Web Hosting Package
         </h1>
 
-        <div className="flex flex-wrap gap-10 justify-center">
+        <div className="flex flex-wrap gap-10 justify-center ">
           {webHosting.map((plan) => (
             <PriceCardForWebHosting key={plan.title} {...plan} />
           ))}
@@ -238,7 +240,7 @@ export default function Home() {
       </div>
 
       {/* Feature2 Simply and fast website */}
-      <div className="bg-[#F7FAFE] -skew-y-6 py-1">
+      <div className="bg-[#F7FAFE] dark:bg-salafi-black -skew-y-6 py-1">
         <div className="skew-y-6 m-10 sm:m-20 flex flex-col justify-center items-center sm:flex-row  sm:justify-around sm:items-center ">
           <div className="relative w-[15rem] sm:w-[25rem] 2xl:w-[30rem] h-[15rem] sm:h-[25rem] 2xl:h-[30rem] flex justify-center items-center">
             <Image className="absolute" src={simpleAndFastWeb} />
@@ -251,7 +253,7 @@ export default function Home() {
               {["1gbps internet speed at all times", "99.99% up time"].map(
                 (feature) => (
                   <ListFeature key={feature}>{feature}</ListFeature>
-                )
+                  )
               )}
             </ul>
           </div>
@@ -269,7 +271,7 @@ export default function Home() {
               "Discord Server",
             ].map((feature) => (
               <ListFeature key={feature}>{feature}</ListFeature>
-            ))}
+              ))}
           </ul>
         </div>
 
@@ -284,15 +286,16 @@ export default function Home() {
           Start the success of your website with us
         </h1>
 
-        <button className="py-2 px-4 mt-8 rounded-lg shadow-sm text-salafi-black bg-white font-medium hover:bg-salafi-grey-white ">
+        <button className="py-2 px-4 mt-8 rounded-lg shadow-sm text-salafi-black bg-white  font-medium  hover:bg-salafi-grey-white ">
           <Link href="https://billing.salafihosting.com/index.php">
             <a>Get started</a>
           </Link>
         </button>
+              </div>
 
         {/* svg1 */}
 
-        <svg
+        {/* <svg
           className="absolute top-2 left-1/3"
           width="55"
           height="35"
@@ -304,10 +307,10 @@ export default function Home() {
             d="M34.8154 34.641L0.174415 14.641L54.8154 0L34.8154 34.641Z"
             fill="#17D7B5"
           />
-        </svg>
+        </svg> */}
         {/* svg2 */}
 
-        <svg
+        {/* <svg
           className="absolute top-[60%] left-0"
           width="49"
           height="39"
@@ -319,10 +322,10 @@ export default function Home() {
             d="M10.3528 38.9898L48.9898 28.6371L0 0.352783L10.3528 38.9898Z"
             fill="#17D7B5"
           />
-        </svg>
+        </svg> */}
 
         {/* svg3 */}
-        <svg
+        {/* <svg
           className="absolute right-2 bottom-4"
           width="89"
           height="71"
@@ -334,7 +337,7 @@ export default function Home() {
             d="M69.5467 70.1817L8.82149e-06 51.5467L88.1816 0.63501L69.5467 70.1817Z"
             fill="#17D7B5"
           />
-        </svg>
+        </svg> */}
       </div>
       <ScrollToTop />
     </Layout>

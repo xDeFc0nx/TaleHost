@@ -2,7 +2,7 @@ import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
 import { Layout } from "../components/layout/Layout";
-import Envolpe from "../images/envolpe.png";
+import Envolpe from "../images/support.svg";
 export default function Home() {
   return (
     <Layout>

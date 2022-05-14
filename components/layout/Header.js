@@ -91,7 +91,7 @@ const Header = (props) => {
           </nav>
         </div>
       </SideDrawer>
-      <header className="  flex justify-between  sm:flex-row sm:justify-between sm:items-center  sm:space-y-0 p-5 sm:px-20 sm:py-2  text-salafi-heading   ">
+      <header className=" dark:bg-salafi-light-black dark:sm:text-white flex justify-between  sm:flex-row sm:justify-between sm:items-center  sm:space-y-0 p-5 sm:px-20 sm:py-2  text-salafi-heading   ">
         <div className="relative w-12 h-12 2xl:w-16 2xl:h-16">
           <Link href="/">
             <a>
