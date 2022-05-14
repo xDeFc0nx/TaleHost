@@ -27,7 +27,7 @@ const Footer = (props) => {
     );
   };
   return (
-    <footer className="w-full bg-[#1B1B27] p-10 px-16 text-[#E6E6E6] ">
+    <footer className="w-full bg-[#1B1B27] border-t-2 border-[#24242F] p-10 px-16 text-[#E6E6E6]  ">
       <div className="flex flex-col sm:flex-row">
         {/* Logo and Description */}
         <div className="sm:w-6/12 ">

@@ -25,7 +25,7 @@ const Card = (props) => {
   const { title, ram, storage, cpu, bandwidth, price, link } = props;
   return (
     <Fragment>
-      <div className="w-[16.5rem] sm:w-[18rem] pt-6 sm:pt-2 pb-4 sm:pb-2 m-3 md:m-4 md:mt-12 2xl:m-10 flex flex-col justify-center items-center rounded-xl border-[1px]  hover:border-[#8D70FE] hover:scale-105 duration-400 transform transition">
+      <div className="w-[16.5rem] sm:w-[18rem] pt-6 sm:pt-2 pb-4 sm:pb-2 m-3 md:m-4 md:mt-12 2xl:m-10 flex flex-col justify-center items-center rounded-xl border-[1px] dark:border-salafi-light-black dark:hover:border-[#8D70FE] hover:border-[#8D70FE] hover:scale-105 duration-400 transform transition">
         {/* heading */}
         <h1 className="font-bold text-lg mt-4 mb-4 sm:mt-10 sm:mb-6">
           {title}
@@ -45,9 +45,11 @@ const Card = (props) => {
             {price}
             <span className=" font-light"> &#47; mo</span>
           </h6>
+            <a href={link}> 
           <button className=" text-[#8D70FE]  font-extrabold border-2 rounded-3xl  px-10 py-2 border-[#8D70FE] mt-2 hover:bg-[#8D70FE] hover:text-white duration-300 transform transition ease-in">
-            <a href={link}> Buy Now</a>
+            Buy Now
           </button>
+            </a>
         </div>
       </div>
     </Fragment>

@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const ScrollToTop = () => {
   return (
-    <div className="hidden md:block">
+    <div className="hidden md:block dark:bg-salafi-light-black">
       <Link href="/" scroll={true}>
         <a>
           <svg

@@ -220,9 +220,9 @@ export default function Home() {
 
       {/* Features */}
       {/* Feature1 Extra Security */}
-      <div className="m-10 sm:m-20 flex flex-col justify-center items-center sm:flex-row  sm:justify-around sm:items-center">
+      <div className="m-10 sm:m-20 dark:sm:text-white flex flex-col justify-center items-center sm:flex-row dark:sm-text-white  sm:justify-around sm:items-center">
         <div>
-          <h1 className="heading">Extra Security</h1>
+          <h1 className="heading dark:sm:text-white">Extra Security</h1>
           <ul className="mt-6  2xl:text-2xl">
             {[
               "Hard Secured Servers",
@@ -244,9 +244,11 @@ export default function Home() {
         <div className="skew-y-6 m-10 sm:m-20 flex flex-col justify-center items-center sm:flex-row  sm:justify-around sm:items-center ">
           <div className="relative w-[15rem] sm:w-[25rem] 2xl:w-[30rem] h-[15rem] sm:h-[25rem] 2xl:h-[30rem] flex justify-center items-center">
             <Image className="absolute" src={simpleAndFastWeb} />
+  
+
           </div>
           <div>
-            <h1 className="heading sm:w-8/12 2xl:10/12">
+            <h1 className="heading sm:w-8/12 dark:sm:text-white 2xl:10/12">
               Simply and fast website
             </h1>
             <ul className="mt-6  2xl:text-2xl">
@@ -263,7 +265,7 @@ export default function Home() {
       {/* Feature3 24/7 Customer Support */}
       <div className="m-10 sm:m-20 flex flex-col justify-center items-center sm:flex-row  sm:justify-around sm:items-center">
         <div>
-          <h1 className="heading sm:6/12">24&#47;7 Customer Support</h1>
+          <h1 className="heading sm:6/12 dark:sm:text-white">24&#47;7 Customer Support</h1>
           <ul className="mt-6  2xl:text-2xl">
             {[
               "24/7 Support",
@@ -281,7 +283,7 @@ export default function Home() {
       </div>
 
       {/* Call to Action  */}
-      <div className="relative my-10 bg-[#7721FF] w-[90%] h-[26rem] p-2 sm:p-0 mx-auto  flex flex-col items-center justify-center text-center sm:text-center rounded-2xl shadow-sm">
+      <div className="relative bg-[#7721FF] w-[90%] h-[26rem] p-2 sm:p-0 mx-auto  flex flex-col items-center justify-center text-center sm:text-center rounded-2xl shadow-sm">
         <h1 className="heading !text-white w-6/12 leading-tight">
           Start the success of your website with us
         </h1>

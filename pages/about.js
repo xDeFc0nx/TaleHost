@@ -27,11 +27,11 @@ export default function Home() {
       </Head>
       {/*About */}
 
-      <div className="flex flex-col justify-center items-center p-10 sm:py-10 sm:px-80 bg-[#FBFAFF]">
-        <div className="bg-[#F9FBFF] sm:w-[40rem] sm:h-[38rem] ">
+      <div className="flex flex-col justify-center items-center p-10 dark:bg-salafi-black sm:py-10 sm:px-80 bg-salafi-grey-white">
+        <div className="bg-salafi-grey-white dark:bg-salafi-black sm:w-[40rem] sm:h-[38rem] ">
           <div className="pl-[1rem] sm:pt-[4rem] pt-[1rem] sm:pl-[4rem]">
             <h1 className="text-[#6752E0] font-bold text-4xl ">About Us</h1>
-            <p className="sm:w-8/12 mt-6 ">
+            <p className="sm:w-8/12 mt-6 dark:sm:text-white ">
             Salafi Hosting was founded in early 2022 by Nehar Tale. He founded Salafi Hosting, To provide easy setup for website hosting, discord bot hosting and Minecraft hosting.
             </p>
            
