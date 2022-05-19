@@ -33,7 +33,7 @@ export default function Home() {
           Choose Your Web Hosting Package
         </h1>
 
-        <div className="flex flex-wrap gap-10 justify-center dark:border-salafi-light-black dark:hover:border-[#8D70FE]">
+        <div className="flex flex-wrap gap-10 justify-center ">
           {webHosting.map((plan) => (
             <PriceCardForWebHosting key={plan.title} {...plan} />
           ))}
