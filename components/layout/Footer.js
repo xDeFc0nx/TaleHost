@@ -50,22 +50,22 @@ const Footer = (props) => {
               <h1 className="font-bold mb-2 ">Services</h1>
             </li>
             <li>
-              <Link href="https://billing.salafihosting.com/">
+              <Link href="https://billing.salafihosting.com/cart.php?a=add&domain=register">
                 <a>Register Domain</a>
               </Link>
             </li>
             <li>
-              <Link href="https://billing.salafihosting.com/index.php?rp=/store/website-hosting">
+              <Link href="/web-hosting">
                 <a>Web Hosting</a>
               </Link>
             </li>
             <li>
-              <Link href="https://billing.salafihosting.com/index.php?rp=/store/discord-bot-hosting">
+              <Link href="/discord-bot-hosting">
                 <a>Discord Bot Hosting</a>
               </Link>
             </li>
             <li>
-              <Link href="https://billing.salafihosting.com/index.php?rp=/store/minecraft-hosting">
+              <Link href="/minecraft-hosting">
                 <a>Minecraft Hosting</a>
               </Link>
             </li>
