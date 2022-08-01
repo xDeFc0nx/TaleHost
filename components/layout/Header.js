@@ -94,6 +94,9 @@ const Header = (props) => {
             <Link href="/about">
               <a className="btn-primary">About</a>
             </Link>
+            <Link href="https://status.salafihosting.com/status/a">
+              <a className="btn-primary">Status</a>
+            </Link>
           </nav>
         </div>
       </SideDrawer>
@@ -148,6 +151,10 @@ const Header = (props) => {
           <Link href="/about">
             <a className="btn-primary">About</a>
           </Link>
+          <Link href="https://status.salafihosting.com/status/a">
+              <a className="btn-primary">Status</a>
+            </Link>
+          
         </nav>
         {/* Laptop Screen */}
         <div className="hidden md:flex flex-row justify-center items-center">
