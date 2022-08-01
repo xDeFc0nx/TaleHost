@@ -89,6 +89,11 @@ const Footer = (props) => {
                 <a>About</a>
               </Link>
             </li>
+            <li>
+            <Link href="https://status.salafihosting.com/status/a">
+              <a>Status</a>
+            </Link>
+            </li>
           </ul>
           <ul className="mt-5 space-y-1">
             <li>
