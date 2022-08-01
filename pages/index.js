@@ -199,7 +199,7 @@ export default function Home() {
       <div className="dark:bg-salafi-light-black  dark:sm:text-white">
         {/*Web Hosting Price */}
 
-        <div className="flex flex-col items-center sm-10 ">
+        <div className="flex flex-col items-center sm-10 dark:bg-salafi-black dark:sm:text-white">
           <h1 className="heading text-center  mt-10 sm:mt-20 mb-10 w-8/12 sm:w-full dark:sm:text-white">
             Choose Your Web Hosting Package
           </h1>
