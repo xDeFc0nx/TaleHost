@@ -49,13 +49,6 @@ export default function Home() {
     );
   };
 
-  // // Maintain state for theme
-  // useEffect(() => {
-  //   let htmlClasses = document.querySelector("html").classList;
-  //   if (localStorage.theme === "dark") {
-  //     htmlClasses.add("dark");
-  //   }
-  // }, []);
   return (
     <Layout>
       <Head>
