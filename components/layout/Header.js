@@ -152,7 +152,7 @@ const Header = (props) => {
         </nav>
         {/* Laptop Screen */}
         <div className="hidden md:flex flex-row justify-center items-center relative -right-[5rem]">
-          <div className="ml-10 dark:hidden" onClick={toggleDarkMode}>
+          <div className="mr-10 dark:hidden" onClick={toggleDarkMode}>
             <MoonIcon className="h-10 w-10 cursor-pointer" />
           </div>
           <div className="mr-10 hidden dark:inline" onClick={toggleDarkMode}>
