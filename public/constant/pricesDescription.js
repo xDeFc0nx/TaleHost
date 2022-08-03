@@ -31,7 +31,7 @@ export const pricesDescription = {
       emailAccount: "5 Email Account",
       databases: "10 MySQL Databases",
       price: "$9.99",
-      link: "https://billing.talehost.com/index.php?rp=/store/website-hosting/premium-hosting",
+      link: "https://billing.talehost.com/index.php?rp=/store/website-hosting/premium",
     },
     {
       title: "Ultimate",
@@ -42,7 +42,7 @@ export const pricesDescription = {
       emailAccount: "Unlimited Email Account",
       databases: "Unlimited MySQL Databases",
       price: "$19.99",
-      link: "https://billing.talehost.com/index.php?rp=/store/website-hosting/ultimate-hosting",
+      link: "https://billing.talehost.com/index.php?rp=/store/website-hosting/ultimate",
   },
 
   ],

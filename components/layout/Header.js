@@ -2,7 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import { Menu } from "@headlessui/react";
-import logo from "../../images/Salafi-Logo.svg";
+import logo from "../../images/Talehost-Logo.svg";
 import { useState, Fragment, useEffect } from "react";
 import SideDrawer from "../navigation/SideDrawer";
 import { MoonIcon, SunIcon } from "@heroicons/react/solid";
