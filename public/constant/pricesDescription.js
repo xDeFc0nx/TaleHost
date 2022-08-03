@@ -9,7 +9,7 @@ export const pricesDescription = {
       emailAccount: "1 Email Account",
       databases: "3 MySQL Databases",
       price: "$1",
-      link: "https://billing.salafihosting.com/index.php?rp=/store/website-hosting/basic",
+      link: "https://billing.talehost.com/index.php?rp=/store/website-hosting/basic",
     },
     {
       title: "Starter",
@@ -20,7 +20,7 @@ export const pricesDescription = {
       emailAccount: "3 Email Account",
       databases: "5 MySQL Databases",
       price: "$4.99",
-      link: "https://billing.salafihosting.com/index.php?rp=/store/website-hosting/starter",
+      link: "https://billing.talehost.com/index.php?rp=/store/website-hosting/starter",
     },
     {
       title: "Premium",
@@ -31,7 +31,7 @@ export const pricesDescription = {
       emailAccount: "5 Email Account",
       databases: "10 MySQL Databases",
       price: "$9.99",
-      link: "https://billing.salafihosting.com/index.php?rp=/store/website-hosting/premium-hosting",
+      link: "https://billing.talehost.com/index.php?rp=/store/website-hosting/premium-hosting",
     },
     {
       title: "Ultimate",
@@ -42,7 +42,7 @@ export const pricesDescription = {
       emailAccount: "Unlimited Email Account",
       databases: "Unlimited MySQL Databases",
       price: "$19.99",
-      link: "https://billing.salafihosting.com/index.php?rp=/store/website-hosting/ultimate-hosting",
+      link: "https://billing.talehost.com/index.php?rp=/store/website-hosting/ultimate-hosting",
   },
 
   ],
@@ -55,7 +55,7 @@ export const pricesDescription = {
       bandwidth: "1 gbps Speeds",
       support: "Supports Java, Golang, Nodejs\n and Python",
       price: "$1.99",
-      link: "https://billing.salafihosting.com/index.php?rp=/store/discord-bot-hosting/basic",
+      link: "https://billing.talehost.com/index.php?rp=/store/discord-bot-hosting/basic",
     },
     {
       title: "Starter",
@@ -65,7 +65,7 @@ export const pricesDescription = {
       bandwidth: "1 gbps Speeds",
       support: "Supports Java, Golang, Nodejs\n and Python",
       price: "$4.99",
-      link: "https://billing.salafihosting.com/index.php?rp=/store/discord-bot-hosting/starter",
+      link: "https://billing.talehost.com/index.php?rp=/store/discord-bot-hosting/starter",
     },
     {
       title: "Premium",
@@ -75,7 +75,7 @@ export const pricesDescription = {
       bandwidth: "1 gbps Speeds",
       support: "Supports Java, Golang, Nodejs\n and Python",
       price: "$7.99",
-      link: "https://billing.salafihosting.com/index.php?rp=/store/discord-bot-hosting/premium",
+      link: "https://billing.talehost.com/index.php?rp=/store/discord-bot-hosting/premium",
     },
     {
       title: "Ultimate",
@@ -85,7 +85,7 @@ export const pricesDescription = {
       bandwidth: "1 gbps Speeds",
       support: "Supports Java, Golang, Nodejs\n and Python",
       price: "$9.99",
-      link: "https://billing.salafihosting.com/index.php?rp=/store/discord-bot-hosting/ultimate",
+      link: "https://billing.talehost.com/index.php?rp=/store/discord-bot-hosting/ultimate",
     },
   ],
   mineCraftHosting: [
@@ -96,7 +96,7 @@ export const pricesDescription = {
       cpu: "CPUs 1",
       bandwidth: "1 gbps Speeds",
       price: "$1.99",
-      link: "https://billing.salafihosting.com/index.php?rp=/store/minecraft-hosting/basic",
+      link: "https://billing.talehost.com/index.php?rp=/store/minecraft-hosting/basic",
     },
     {
       title: "Starter",
@@ -105,7 +105,7 @@ export const pricesDescription = {
       cpu: "CPUs 1",
       bandwidth: "1 gbps Speeds",
       price: "$4.99",
-      link: "https://billing.salafihosting.com/index.php?rp=/store/minecraft-hosting/starter",
+      link: "https://billing.talehost.com/index.php?rp=/store/minecraft-hosting/starter",
     },
     {
       title: "Premium",
@@ -115,7 +115,7 @@ export const pricesDescription = {
       bandwidth: "1 gbps Speeds",
       support: "Recommended minimum for Java 1.17",
       price: "$7.99",
-      link: "https://billing.salafihosting.com/index.php?rp=/store/minecraft-hosting/premium",
+      link: "https://billing.talehost.com/index.php?rp=/store/minecraft-hosting/premium",
     },
     {
       title: "Ultimate",
@@ -124,7 +124,7 @@ export const pricesDescription = {
       cpu: "CPUs 4",
       bandwidth: "1 gbps Speeds",
       price: "$9.99",
-      link: "https://billing.salafihosting.com/index.php?rp=/store/minecraft-hosting/ultimate",
+      link: "https://billing.talehost.com/index.php?rp=/store/minecraft-hosting/ultimate",
     },
   ],
 };

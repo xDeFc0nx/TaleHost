@@ -55,9 +55,9 @@ export default function Home() {
                 </h6>
                 <a
                   className="text-[#B2AAF0]"
-                  href="mailto:support@salafihosting.com"
+                  href="mailto:support@talehost.com"
                 >
-                  support@salafihosting.com
+                  support@talehost.com
                 </a>
               </li>
               <li className="flex flex-col  sm:flex-row items-center">

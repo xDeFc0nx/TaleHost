@@ -158,7 +158,7 @@ const Header = (props) => {
           <div className="mr-10 hidden dark:inline" onClick={toggleDarkMode}>
             <SunIcon className="h-10 w-10 cursor-pointer" />
           </div>
-          <Link href="https://billing.salafihosting.com/index.php?rp=/login">
+          <Link href="https://billing.talehost.com/index.php?rp=/login">
             <a className="btn-primary bg-salafi-blue-light text-white hover:bg-salafi-blue   rounded-1 py-2 px-8">
               Login
             </a>

@@ -32,8 +32,8 @@ export default function Home() {
           <div className="">
             <h1 className="text-[#6752E0] font-bold text-4xl ">About Us</h1>
             <p className="sm:w-8/12 mt-6 dark:sm:text-white ">
-              Salafi Hosting was founded in early 2022 by Nehar Tale. He founded
-              Salafi Hosting, To provide easy setup for website hosting, discord
+              TaleHost was founded in early 2022 by Nehar Tale. He founded
+              TaleHost, To provide easy setup for website hosting, discord
               bot hosting and Minecraft hosting.
             </p>
           </div>

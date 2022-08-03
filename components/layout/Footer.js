@@ -39,7 +39,7 @@ const Footer = (props) => {
             </Link>
           </div>
           <p className="sm:w-10/12 md:w-6/12  mt-4">
-            By using Salafi Hosting website and services, you agree to our
+            By using TaleHost website and services, you agree to our
             Terms of Service and Privacy Policy.
           </p>
         </div>
@@ -50,7 +50,7 @@ const Footer = (props) => {
               <h1 className="font-bold mb-2 ">Services</h1>
             </li>
             <li>
-              <Link href="https://billing.salafihosting.com/cart.php?a=add&domain=register">
+              <Link href="https://billing.talehost.com/cart.php?a=add&domain=register">
                 <a>Register Domain</a>
               </Link>
             </li>
@@ -90,7 +90,7 @@ const Footer = (props) => {
               </Link>
             </li>
             <li>
-            <Link href="https://status.salafihosting.com/status/a">
+            <Link href="https://status.talehost.com/status/a">
               <a>Status</a>
             </Link>
             </li>
@@ -109,7 +109,7 @@ const Footer = (props) => {
       </div>
       <div className=" sm:mt-20">
         <h1 className="lg:text-xl  text-white">
-          {year} &copy; Salafi Hosting LLC
+          {year} &copy; TaleHost
         </h1>
       </div>
     </footer>
