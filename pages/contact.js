@@ -28,7 +28,7 @@ export default function Home() {
       {/*About */}
 
       <div className="flex flex-col justify-center items-center p-10 sm:py-10 sm:px-80 dark:bg-salafi-black bg-[#FBFAFF]">
-        <div className="bg-[#F9FBFF] dark:bg-salafi-black sm:w-[40rem] sm:h-[38rem] ">
+        <div className="bg-[#F9FBFF] dark:bg-salafi-black sm:w-[40rem] sm:h-[38rem] mb-10 sm:mb-20">
           <div className="pl-[1rem] sm:pt-[4rem] pt-[1rem] sm:pl-[4rem]">
             <h1 className="text-[#6752E0] font-bold text-4xl ">Contact Us</h1>
             <ul className="mt-6 space-y-2">

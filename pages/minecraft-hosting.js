@@ -27,12 +27,12 @@ export default function Home() {
       />
 
       {/*Web Hosting Price */}
-      <div className="flex flex-col items-center  dark:sm:text-white dark:bg-salafi-black">
-        <h1 className="heading text-center mt-20 mb-10 w-6/12 sm:w-full dark:sm:text-white">
+      <div className="flex flex-col items-center   dark:bg-salafi-black dark:text-white">
+        <h1 className="heading text-center mt-20 mb-10 w-6/12 sm:w-full dark:text-white">
           Choose Your Web Hosting Package
         </h1>
 
-        <div className="flex flex-wrap gap-10 justify-center">
+        <div className="flex flex-wrap gap-10 justify-center mb-10 sm:mb-20">
           {mineCraftHosting.map((plan) => (
             <PriceCardForMinecraftHosting key={plan.title} {...plan} />
           ))}

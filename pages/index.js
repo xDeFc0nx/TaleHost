@@ -74,7 +74,7 @@ export default function Home() {
       <div className="sm:py-20 bg-salafi-grey-white dark:bg-salafi-black space-y-10">
         {/* Hero */}
         <div className="p-10 sm:p-0 grid grid-cols-12 place-items-center  ">
-          <h1 className="heading col-span-12 sm:col-span-6 self-start sm:w-9/12 pb-10 text-center sm:text-left dark:sm:text-white">
+          <h1 className="heading col-span-12 sm:col-span-6 self-start sm:w-9/12 pb-10 text-center sm:text-left dark:text-white">
             Reliable Web Hosting Platform for Your Website
           </h1>
           <div className="relative col-span-12 sm:col-span-6 m-2">
@@ -119,7 +119,7 @@ export default function Home() {
         </div>
 
         {/* Services */}
-        <div className="flex flex-col sm-10 sm:flex-row sm:flex-wrap p-10  sm:px-10 justify-center  gap-10 dark:sm:text-white ">
+        <div className="flex flex-col sm-10 sm:flex-row sm:flex-wrap p-10  sm:px-10 justify-center  gap-10 dark:text-white ">
           {servicesDescription.map((service) => (
             <ServiceCard key={service.title} {...service} />
           ))}
@@ -196,15 +196,15 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="dark:bg-salafi-light-black  dark:sm:text-white">
+      <div className="dark:bg-salafi-light-black  dark:sm:text-white ">
         {/*Web Hosting Price */}
 
-        <div className="flex flex-col items-center sm-10 dark:bg-salafi-black dark:sm:text-white">
-          <h1 className="heading text-center  mt-10 sm:mt-20 mb-10 w-8/12 sm:w-full dark:sm:text-white">
+        <div className="flex flex-col items-center dark:bg-salafi-black dark:text-white">
+          <h1 className="heading text-center  mt-10 sm:mt-20 mb-10 w-8/12 sm:w-full dark:text-white">
             Choose Your Web Hosting Package
           </h1>
 
-          <div className="flex flex-wrap gap-10 justify-center ">
+          <div className="flex flex-wrap gap-10 justify-center mb-10 sm:mb-20">
             {webHosting.map((plan) => (
               <PriceCardForWebHosting key={plan.title} {...plan} />
             ))}
@@ -213,9 +213,9 @@ export default function Home() {
 
         {/* Features */}
         {/* Feature1 Extra Security */}
-        <div className="m-10 sm:m-20 dark:sm:text-white flex flex-col justify-center items-center sm:flex-row dark:sm-text-white  sm:justify-around sm:items-center">
+        <div className="m-10 sm:m-20 dark:text-white flex flex-col justify-center items-center sm:flex-row  sm:justify-around sm:items-center">
           <div>
-            <h1 className="heading dark:sm:text-white">Extra Security</h1>
+            <h1 className="heading dark:text-white">Extra Security</h1>
             <ul className="mt-6  2xl:text-2xl">
               {[
                 "Hard Secured Servers",
@@ -239,7 +239,7 @@ export default function Home() {
               <Image className="absolute" src={simpleAndFastWeb} />
             </div>
             <div>
-              <h1 className="heading sm:w-8/12 dark:sm:text-white 2xl:10/12">
+              <h1 className="heading sm:w-8/12 dark:text-white 2xl:10/12">
                 Simply and fast website
               </h1>
               <ul className="mt-6  2xl:text-2xl">
@@ -256,7 +256,7 @@ export default function Home() {
         {/* Feature3 24/7 Customer Support */}
         <div className="m-10 sm:m-20 flex flex-col justify-center items-center sm:flex-row  sm:justify-around sm:items-center">
           <div>
-            <h1 className="heading sm:6/12 dark:sm:text-white">
+            <h1 className="heading sm:6/12 dark:text-white">
               24&#47;7 Customer Support
             </h1>
             <ul className="mt-6  2xl:text-2xl">
