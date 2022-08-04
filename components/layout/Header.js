@@ -54,7 +54,7 @@ const Header = (props) => {
   return (
     <Fragment>
       {/* Mobile Screen*/}
-      <SideDrawer show={drawerIsOpen} onClick={closeDrawerHandler}>
+      <SideDrawer drawerIsOpen={drawerIsOpen}>
         <div className="p-5 bg-salafi-grey-white sm:px-20 sm:py-2">
           <div className="flex justify-between ">
             <div className="relative w-12 h-12 2xl:w-16 2xl:h-16">
@@ -67,7 +67,7 @@ const Header = (props) => {
             <div className="block md:hidden group">
               <button
                 className="w-[2.5rem] h-[2.6rem] bg-transparent   flex flex-col justify-around cursor-pointer"
-                onClick={openDrawerHandler}
+                onClick={closeDrawerHandler}
               >
                 <span className="block w-[2.5rem] h-[2px] bg-salafi-primary-btn rotate-45   origin-top-left"></span>
                 <span className="block w-[2.5rem] h-[2px] bg-salafi-primary-btn opacity-0"></span>
@@ -182,9 +182,9 @@ const Header = (props) => {
               className="w-[2.5rem] h-[2.6rem] bg-transparent   flex flex-col justify-around cursor-pointer"
               onClick={openDrawerHandler}
             >
-              <span className="block w-[2.5rem] h-[2px] bg-salafi-primary-btn  group-active:rotate-45 transition-transform origin-top-left"></span>
+              <span className="block w-[2.5rem] h-[2px] bg-salafi-primary-btn"></span>
               <span className="block w-[2.5rem] h-[2px] bg-salafi-primary-btn group-hover:translate-x-2 transition-transform group-active:opacity-0"></span>
-              <span className="block w-[2.5rem] h-[2px] bg-salafi-primary-btn  group-active:-rotate-45 transition-transform origin-top-left"></span>
+              <span className="block w-[2.5rem] h-[2px] bg-salafi-primary-btn"></span>
             </button>
           </div>
         </div>
