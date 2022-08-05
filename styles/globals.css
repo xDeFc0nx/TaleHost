@@ -20,7 +20,7 @@ a {
 }
 @layer components {
   .btn-primary {
-    @apply lg:hover:text-black lg:hover:bg-salafi-primary-btn lg:hover:text-white lg:px-3 lg:py-2 lg:rounded-md  font-medium;
+    @apply lg:hover:bg-salafi-primary-btn lg:hover:text-white lg:px-3 lg:py-2 lg:rounded-md  font-medium;
   }
 }
 
