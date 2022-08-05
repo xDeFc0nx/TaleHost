@@ -29,6 +29,9 @@ a {
   font-weight: bold;
   color: #2e2e2e;
 }
+a:hover {
+  color: #8d70fe;
+}
 @media (min-width: 640px) {
   .heading {
     font-size: 40px;
@@ -48,18 +51,4 @@ a {
   .heading {
     font-size: 64px;
   }
-}
-.side-drawer {
-  position: fixed;
-  left: 0;
-  top: 0;
-  z-index: 100;
-  margin-top: -100%;
-  width: 100%;
-  background: transparent;
-  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
-  transition: 0.8s ease-in all;
-}
-.show-drawer {
-  margin-top: 0 !important;
 }

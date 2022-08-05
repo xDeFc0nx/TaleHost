@@ -75,7 +75,7 @@ const Header = (props) => {
               </button>
             </div>
           </div>
-          <nav className="flex flex-col items-center ">
+          <nav className="flex flex-col items-start m-5 ">
             <Link href="/web-hosting">
               <a className="btn-primary">Web Hosting</a>
             </Link>
