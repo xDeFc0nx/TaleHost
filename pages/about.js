@@ -30,11 +30,11 @@ export default function Home() {
       <div className="flex flex-col justify-center items-center p-10 sm:p-0 dark:bg-salafi-black  bg-salafi-grey-white">
         <div className="bg-salafi-grey-white dark:bg-salafi-black sm:w-[40rem] sm:h-[38rem] flex flex-col sm:flex-row justify-center items-center mb-10 sm:mb-20">
           <div className="">
-            <h1 className="text-[#6752E0] font-bold text-4xl ">About Us</h1>
+            <h1 className="font-bold text-4xl dark:text-[#FBFAFF]">About Us</h1>
             <p className="sm:w-8/12 mt-6 dark:sm:text-white ">
               TaleHost was founded in early 2022 by Nehar Tale. He founded
-              TaleHost, To provide easy setup for website hosting, discord
-              bot hosting and Minecraft hosting.
+              TaleHost, To provide easy setup for website hosting, discord bot
+              hosting and Minecraft hosting.
             </p>
           </div>
           <div className="relative w-[12rem] sm:w-[18rem] mt-10 sm:mt-20">
