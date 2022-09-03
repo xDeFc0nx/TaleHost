@@ -44,11 +44,16 @@ const Card = (props) => {
         {/* list */}
         <div className="flex justify-center sm:mt-2">
           <ul className="font-medium text-[#808080]">
-            {[domain, subDomains, storage, securityFeature, databases, emailAccount].map(
-              (list) => (
-                <ListFeature key={list}>{list}</ListFeature>
-              )
-            )}
+            {[
+              domain,
+              subDomains,
+              storage,
+              securityFeature,
+              databases,
+              emailAccount,
+            ].map((list) => (
+              <ListFeature key={list}>{list}</ListFeature>
+            ))}
           </ul>
         </div>
         {/* Price and CTA */}
@@ -57,10 +62,10 @@ const Card = (props) => {
             {price}
             <span className=" font-light"> &#47; mo</span>
           </h6>
-            <a href={link}> 
-          <button className=" text-[#8D70FE]  font-extrabold border-2 rounded-3xl  px-10 py-2 border-[#8D70FE] mt-2 hover:bg-[#8D70FE] hover:text-white duration-300 transform transition ease-in">
-          Buy Now
-          </button>
+          <a href={link}>
+            <button className=" text-[#8D70FE]  font-extrabold border-2 rounded-3xl  px-10 py-2 border-[#8D70FE] mt-2 hover:bg-[#8D70FE] hover:text-white duration-300 transform transition ease-in">
+              Buy Now
+            </button>
           </a>
         </div>
       </div>
