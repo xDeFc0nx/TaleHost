@@ -39,8 +39,8 @@ const Footer = (props) => {
             </Link>
           </div>
           <p className="sm:w-10/12 md:w-6/12  mt-4">
-            By using TaleHost website and services, you agree to our
-            Terms of Service and Privacy Policy.
+            By using TaleHost website and services, you agree to our Terms of
+            Service and Privacy Policy.
           </p>
         </div>
         {/* Navigation */}
@@ -90,9 +90,14 @@ const Footer = (props) => {
               </Link>
             </li>
             <li>
-            <Link href="https://status.talehost.com/status/a">
-              <a>Status</a>
-            </Link>
+              <Link href="https://status.talehost.com/status/a">
+                <a>Status</a>
+              </Link>
+            </li>
+            <li>
+              <Link href="/privacy-policy">
+                <a>Privacy Policy</a>
+              </Link>
             </li>
           </ul>
           <ul className="mt-5 space-y-1">
@@ -108,9 +113,7 @@ const Footer = (props) => {
         </div>
       </div>
       <div className=" sm:mt-20">
-        <h1 className="lg:text-xl  text-white">
-          {year} &copy; TaleHost
-        </h1>
+        <h1 className="lg:text-xl  text-white">{year} &copy; TaleHost</h1>
       </div>
     </footer>
   );
