@@ -43,6 +43,7 @@ const privacyPolicy = () => {
                 href="http://www.allaboutcookies.org"
                 target="_blank"
                 className="text-[#8D70FE]  hover:text-[#7721FF]"
+                rel="noreferrer"
               >
                 http://www.allaboutcookies.org
               </a>
@@ -122,6 +123,7 @@ const privacyPolicy = () => {
               <a
                 href="http://www.networkadvertising.org/understanding-online-advertising/how-does-it-work."
                 target="_blank"
+                rel="noreferrer"
                 className="text-[#8D70FE]  hover:text-[#7721FF]"
               >
                 http://www.networkadvertising.org/understanding-online-advertising/how-does-it-work.
@@ -135,6 +137,7 @@ const privacyPolicy = () => {
             <a
               href="https://www.facebook.com/settings/?tab=ads"
               target="_blank"
+              rel="noreferrer"
               className="text-[#8D70FE]  hover:text-[#7721FF]"
             >
               https://www.facebook.com/settings/?tab=ads
@@ -144,6 +147,7 @@ const privacyPolicy = () => {
             <a
               href="https://www.google.com/settings/ads/anonymous"
               target="_blank"
+              rel="noreferrer"
               className="text-[#8D70FE]  hover:text-[#7721FF]"
             >
               https://www.google.com/settings/ads/anonymous
@@ -153,6 +157,7 @@ const privacyPolicy = () => {
             <a
               href="https://advertise.bingads.microsoft.com/en-us/resources/policies/personalized-ads"
               target="_blank"
+              rel="noreferrer"
               className="text-[#8D70FE]  hover:text-[#7721FF]"
             >
               https://advertise.bingads.microsoft.com/en-us/resources/policies/personalized-ads
@@ -165,6 +170,7 @@ const privacyPolicy = () => {
               <a
                 href="https://optout.aboutads.info/."
                 target="_blank"
+                rel="noreferrer"
                 className="text-[#8D70FE]  hover:text-[#7721FF]"
               >
                 https://optout.aboutads.info/.
@@ -223,6 +229,7 @@ const privacyPolicy = () => {
               href="https://billing.talehost.com/contact.php"
               className="text-[#8D70FE] hover:text-[#7721FF]"
               target="_blank"
+              rel="noreferrer"
             >
               Contact Support
             </a>
