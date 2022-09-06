@@ -5,6 +5,7 @@ html,
 body {
   padding: 0;
   margin: 0;
+  scroll-behavior: smooth;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   /* background-color: #24242F; */
@@ -18,6 +19,10 @@ a {
 * {
   box-sizing: border-box;
 }
+*::-webkit-scrollbar {
+  display: none;
+}
+
 @layer components {
   .btn-primary {
     @apply lg:hover:bg-salafi-primary-btn lg:hover:text-white lg:px-3 lg:py-2 lg:rounded-md  font-medium;
