@@ -94,6 +94,11 @@ const Header = (props) => {
             <Link href="/about">
               <a className="btn-primary">About</a>
             </Link>
+            <Link href="https://billing.talehost.com/index.php?rp=/login">
+              <a className="btn-primary bg-salafi-blue-light text-white hover:bg-salafi-blue   rounded-1 py-2 px-8">
+                Login
+              </a>
+            </Link>
           </nav>
         </div>
       </SideDrawer>
