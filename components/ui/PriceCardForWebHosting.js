@@ -24,7 +24,7 @@ const ListFeature = (props) => {
 const Card = (props) => {
   const {
     title,
-    domain,
+    website,
     subDomains,
     storage,
     securityFeature,
@@ -44,16 +44,11 @@ const Card = (props) => {
         {/* list */}
         <div className="flex justify-center sm:mt-2">
           <ul className="font-medium text-[#808080]">
-            {[
-              domain,
-              subDomains,
-              storage,
-              securityFeature,
-              databases,
-              emailAccount,
-            ].map((list) => (
-              <ListFeature key={list}>{list}</ListFeature>
-            ))}
+            {[website, storage, securityFeature, databases, emailAccount].map(
+              (list) => (
+                <ListFeature key={list}>{list}</ListFeature>
+              )
+            )}
           </ul>
         </div>
         {/* Price and CTA */}

@@ -2,8 +2,7 @@ export const pricesDescription = {
   webHosting: [
     {
       title: "Basic",
-      domain: "1 Domain",
-      subDomains: "5 Subdomains",
+      website: "1 Website",
       storage: "25 GB Storage",
       securityFeature: "Free SSL",
       emailAccount: "1 Email Account",
@@ -13,8 +12,7 @@ export const pricesDescription = {
     },
     {
       title: "Starter",
-      domain: "3 Domains",
-      subDomains: "10 Subdomains",
+      website: "3 Websites",
       storage: "50 GB Storage",
       securityFeature: "Free SSL",
       emailAccount: "3 Email Account",
@@ -24,8 +22,7 @@ export const pricesDescription = {
     },
     {
       title: "Premium",
-      domain: "5 Domains",
-      subDomains: "30 Subdomains",
+      website: "5 Websites",
       storage: "80 GB Storage",
       securityFeature: "Free SSL",
       emailAccount: "5 Email Account",
@@ -35,16 +32,14 @@ export const pricesDescription = {
     },
     {
       title: "Ultimate",
-      domain: "Unlimited Domains",
-      subDomains: "Unlimited Subdomains",
+      website: "Unlimited Websites",
       storage: "200 GB Storage",
       securityFeature: "Free SSL",
       emailAccount: "Unlimited Email Account",
       databases: "Unlimited MySQL Databases",
       price: "$19.99",
       link: "https://billing.talehost.com/index.php?rp=/store/website-hosting/ultimate",
-  },
-
+    },
   ],
   botHosting: [
     {
