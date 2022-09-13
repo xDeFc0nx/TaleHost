@@ -8,23 +8,22 @@ export default function Home() {
 
   return (
     <Layout>
-      <script
-        async
-        src="https://www.googletagmanager.com/gtag/js?id=G-HDPL8YQR19"
-      />
+      <Head>
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-HDPL8YQR19"
+        />
 
-      <script
-        dangerouslySetInnerHTML={{
-          __html: `
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
               gtag('config', 'G-HDPL8YQR19', { page_path: window.location.pathname });
             `,
-        }}
-      />
-
-      <Head>
+          }}
+        />
         <title>Discord Bot Hosting</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
