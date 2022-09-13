@@ -9,7 +9,7 @@ export default function Home() {
     <Layout>
       <script
         async
-        src="https://www.googletagmanager.com/gtag/js?id=G-2JYXB6HX49"
+        src="https://www.googletagmanager.com/gtag/js?id=G-HDPL8YQR19"
       />
       <Head>
         <title>Minecraft Hosting</title>
