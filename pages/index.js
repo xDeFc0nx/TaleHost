@@ -66,7 +66,7 @@ export default function Home() {
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
-              gtag('config', '[Tracking ID]', { page_path: window.location.pathname });
+              gtag('config', 'G-HDPL8YQR19', { page_path: window.location.pathname });
             `,
         }}
       />
