@@ -240,14 +240,12 @@ export default function Home() {
             </div>
             <div>
               <h1 className="heading sm:w-8/12 dark:text-white 2xl:10/12">
-                Simply and fast website
+                Simple and fast Hosting
               </h1>
               <ul className="mt-6  2xl:text-2xl">
-                {["1gbps internet speed at all times", "99.99% up time"].map(
-                  (feature) => (
-                    <ListFeature key={feature}>{feature}</ListFeature>
-                  )
-                )}
+                {["1gbps", "99.99% up time"].map((feature) => (
+                  <ListFeature key={feature}>{feature}</ListFeature>
+                ))}
               </ul>
             </div>
           </div>
