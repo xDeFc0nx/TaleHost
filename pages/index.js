@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
@@ -15,9 +15,94 @@ import muslimManInTurban from "../images/muslimManInTurban.svg";
 import simpleAndFastWeb from "../images/simpleAndFastWeb.svg";
 import supportFeature from "../images/supportFeature.svg";
 import ScrollToTop from "../components/utilities/ScrollToTop";
+import ScrollTrigger from "gsap/dist/ScrollTrigger";
+import gsap from "gsap";
 
 export default function Home() {
   const router = useRouter();
+  const heroHeadingRef = useRef();
+  const featureOne = useRef();
+  const featureTwo = useRef();
+  const featureThree = useRef();
+  const featureOneText = useRef();
+  const featureOneImage = useRef();
+  const featureTwoText = useRef();
+  const featureTwoImage = useRef();
+  const featureThreeText = useRef();
+  const featureThreeImage = useRef();
+
+  gsap.registerPlugin(ScrollTrigger);
+
+  useEffect(() => {
+    const heroTowerElment = document.getElementById("heroTower");
+    const tl = gsap.timeline({
+      defaults: {
+        duration: 1,
+        ease: "power1",
+      },
+    });
+    tl.fromTo(heroHeadingRef.current, { x: -100 }, { x: 0 }, 0);
+    tl.fromTo(heroTowerElment, { x: 100 }, { x: 0 }, 0);
+  }, []);
+
+  useEffect(() => {
+    ///////////////////////////
+    // Element Movement
+    const leftToRightMovment = (element, loction) => {
+      const tl = gsap.timeline({
+        defaults: {
+          duration: 1,
+          ease: "power1",
+        },
+      });
+
+      tl.fromTo(
+        element.current,
+        { x: -100, opacity: 0 },
+        {
+          x: 0,
+          opacity: 1,
+          scrollTrigger: {
+            trigger: loction.current,
+            start: "top center",
+            end: "bottom bottom",
+            scrub: true,
+          },
+        }
+      );
+    };
+    ///////////////////////////
+    // Movement rightToLeftMovment
+    const rightToLeftMovment = (element, loction) => {
+      const tl = gsap.timeline({
+        defaults: {
+          duration: 1,
+          ease: "power1",
+        },
+      });
+
+      tl.fromTo(
+        element.current,
+        { x: 100, opacity: 0 },
+        {
+          x: 0,
+          opacity: 1,
+          scrollTrigger: {
+            trigger: loction.current,
+            start: "top center",
+            end: "bottom bottom",
+            scrub: true,
+          },
+        }
+      );
+    };
+    leftToRightMovment(featureOneText, featureOne);
+    rightToLeftMovment(featureOneImage, featureOne);
+    leftToRightMovment(featureTwoImage, featureTwo);
+    rightToLeftMovment(featureTwoText, featureTwo);
+    leftToRightMovment(featureThreeText, featureThree);
+    rightToLeftMovment(featureThreeImage, featureThree);
+  }, []);
 
   const { webHosting } = pricesDescription;
   const domainFindHandler = (e) => {
@@ -74,11 +159,14 @@ export default function Home() {
       <div className="sm:py-20 bg-salafi-grey-white dark:bg-salafi-black space-y-10">
         {/* Hero */}
         <div className="p-10 sm:p-0 grid grid-cols-12 place-items-center  ">
-          <h1 className="heading col-span-12 sm:col-span-6 self-start sm:w-9/12 pb-10 text-center sm:text-left dark:text-white">
+          <h1
+            ref={heroHeadingRef}
+            className="heading col-span-12 sm:col-span-6 self-start sm:w-9/12 pb-10 text-center sm:text-left dark:text-white"
+          >
             Reliable Web Hosting Platform for Your Website
           </h1>
           <div className="relative col-span-12 sm:col-span-6 m-2">
-            <Image className="absolute  " src={heroTower} />
+            <Image className="absolute" id="heroTower" src={heroTower} />
 
             {/* svg1 */}
             <svg
@@ -213,8 +301,11 @@ export default function Home() {
 
         {/* Features */}
         {/* Feature1 Extra Security */}
-        <div className="m-10 sm:m-20 dark:text-white flex flex-col justify-center items-center sm:flex-row  sm:justify-around sm:items-center">
-          <div>
+        <div
+          ref={featureOne}
+          className="m-10 sm:m-20 dark:text-white flex flex-col justify-center items-center sm:flex-row  sm:justify-around sm:items-center"
+        >
+          <div ref={featureOneText}>
             <h1 className="heading dark:text-white">Extra Security</h1>
             <ul className="mt-6  2xl:text-2xl">
               {[
@@ -227,18 +318,27 @@ export default function Home() {
             </ul>
           </div>
 
-          <div className="relative w-[15rem] sm:w-[25rem] 2xl:w-[30rem] h-[15rem] sm:h-[25rem] 2xl:h-[30rem] flex justify-center items-center">
+          <div
+            ref={featureOneImage}
+            className="relative w-[15rem] sm:w-[25rem] 2xl:w-[30rem] h-[15rem] sm:h-[25rem] 2xl:h-[30rem] flex justify-center items-center"
+          >
             <Image className="absolute" src={muslimManInTurban} />
           </div>
         </div>
 
         {/* Feature2 Simply and fast website */}
-        <div className="bg-[#F7FAFE] dark:bg-salafi-black -skew-y-6 py-1">
+        <div
+          ref={featureTwo}
+          className="bg-[#F7FAFE] dark:bg-salafi-black -skew-y-6 py-1"
+        >
           <div className="skew-y-6 m-10 sm:m-20 flex flex-col justify-center items-center sm:flex-row  sm:justify-around sm:items-center ">
-            <div className="relative w-[15rem] sm:w-[25rem] 2xl:w-[30rem] h-[15rem] sm:h-[25rem] 2xl:h-[30rem] flex justify-center items-center">
+            <div
+              ref={featureTwoImage}
+              className="relative w-[15rem] sm:w-[25rem] 2xl:w-[30rem] h-[15rem] sm:h-[25rem] 2xl:h-[30rem] flex justify-center items-center"
+            >
               <Image className="absolute" src={simpleAndFastWeb} />
             </div>
-            <div>
+            <div ref={featureTwoText}>
               <h1 className="heading sm:w-8/12 dark:text-white 2xl:10/12">
                 Simple and fast Hosting
               </h1>
@@ -252,8 +352,11 @@ export default function Home() {
         </div>
 
         {/* Feature3 24/7 Customer Support */}
-        <div className="m-10 sm:m-20 flex flex-col justify-center items-center sm:flex-row  sm:justify-around sm:items-center">
-          <div>
+        <div
+          ref={featureThree}
+          className="m-10 sm:m-20 flex flex-col justify-center items-center sm:flex-row  sm:justify-around sm:items-center"
+        >
+          <div ref={featureThreeText}>
             <h1 className="heading sm:6/12 dark:text-white">
               24&#47;7 Customer Support
             </h1>
@@ -268,7 +371,10 @@ export default function Home() {
             </ul>
           </div>
 
-          <div className="relative w-[15rem] sm:w-[25rem] 2xl:w-[30rem] h-[15rem] sm:h-[25rem] 2xl:h-[30rem] flex justify-center items-center">
+          <div
+            ref={featureThreeImage}
+            className="relative w-[15rem] sm:w-[25rem] 2xl:w-[30rem] h-[15rem] sm:h-[25rem] 2xl:h-[30rem] flex justify-center items-center"
+          >
             <Image className="absolute" src={supportFeature} />
           </div>
         </div>
